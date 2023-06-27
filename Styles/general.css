@@ -1,8 +1,11 @@
+/* Code in this file is responsible for general visuals */
 body {
   margin: 0;
   padding: 0;
   background-color: var(--color-black);
-  height: 3000px;
+  color: var(--color-white);
+  font-family: Kanit, Arial;
+  height: 3650px;
   transition: background-color 0.15s;
   display: flex;
   flex-direction: column;
@@ -16,5 +19,9 @@ body {
   background-color: var(--color-white);
   color: var(--color-black);
   border-color: var(--color-black);
+}
+
+footer {
+  text-align: center;
 }
 

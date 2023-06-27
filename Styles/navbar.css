@@ -1,8 +1,8 @@
+/* Code in this file is responsible for navigation bar visuals */
 .nav-bar {
   background-color: var(--color-black);
   border-bottom: 3px solid var(--color-white);
   color: var(--color-white);
-  font-family: Kanit, Arial;
   font-size: 25px;
   font-weight: 700;
   display: flex;
@@ -24,6 +24,7 @@
   border: 2px solid transparent;
   border-radius: 2px;
   padding: 5px 20px 5px 20px;
+  cursor: pointer;
 }
 
 .color-mode-button {

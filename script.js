@@ -17,23 +17,23 @@ function darkLightMode()
 function pageScroll()
 {
   const topScroll = 0;
-  const aboutScroll = 500;
-  const resumeScroll = 1000;
-  const projectsScroll = 1500;
+  const aboutScroll = 870;
+  const resumeScroll = 1740;
+  const projectsScroll = 2610;
 
   const topButton = document.getElementsByClassName("top-button")[0];
   const aboutButton = document.getElementsByClassName("about-button")[0];
   const resumeButton = document.getElementsByClassName("resume-button")[0];
   const projectsButton = document.getElementsByClassName("projects-button")[0];
 
-  ScrollToPosition(topButton, topScroll);
-  ScrollToPosition(aboutButton, aboutScroll);
-  ScrollToPosition(resumeButton, resumeScroll);
-  ScrollToPosition(projectsButton, projectsScroll);
+  scrollToPosition(topButton, topScroll);
+  scrollToPosition(aboutButton, aboutScroll);
+  scrollToPosition(resumeButton, resumeScroll);
+  scrollToPosition(projectsButton, projectsScroll);
 }
 
 //Supporting function to pageScroll that reduces code duplication.
-function ScrollToPosition(button, scroll)
+function scrollToPosition(button, scroll)
 {
   button.addEventListener("click", function()
   {
@@ -41,5 +41,24 @@ function ScrollToPosition(button, scroll)
       top: scroll,
       behavior: 'smooth'
     });
+  });
+}
+
+//Responsible for hide and display of projects using buttons.
+function projectsDisplay()
+{
+  const button1 = document.getElementsByClassName("project-button-1")[0];
+  const button2 = document.getElementsByClassName("project-button-2")[0];
+  const project1 = document.getElementsByClassName("project-1")[0];
+  const project2 = document.getElementsByClassName("project-2")[0];
+
+  button1.addEventListener('click', function() {
+    project1.style.display = 'none';
+    project2.style.display = 'block';
+  });
+  
+  button2.addEventListener('click', function() {
+    project1.style.display = 'block';
+    project2.style.display = 'none';
   });
 }

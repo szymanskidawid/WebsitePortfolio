@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dawid Szymański - Personal Portfolio</title>
 
+  <!--Linked font "Kanit" that is used on the whole website-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+  <!--Linked Font Awesome that is used for icons on the website-->
   <script src="https://kit.fontawesome.com/d9be828467.js" crossorigin="anonymous"></script>
 
+  <!--Linked CSS files-->
   <link rel="stylesheet" href="Styles/variables.css">
   <link rel="stylesheet" href="Styles/navbar.css">
   <link rel="stylesheet" href="Styles/content.css">
   <link rel="stylesheet" href="Styles/general.css">
   
-  
+
 </head>
 <body>
-  <div class="nav-bar">
+  <!--Below code is responsible for navigation bar with buttons-->
+  <nav class="nav-bar">
     <div class="top-button">
       <div class="top-button-icon">
         <i class="fa-solid fa-arrow-up fa-beat"></i>
@@ -39,21 +43,74 @@
     <div class="color-mode-button" onclick="darkLightMode()">
       <i id="icon-change" class="fa fa-sun fa-beat"></i>
     </div>
-  </div>
-  <div class="page-sections">
-    <div class="welcome-section">
-      Welcome
-    </div>
-    <div class="about-section">
-      About
-    </div>
-    <div class="resume-section">
-      Resume
-    </div>
-    <div class="projects-section">
-      Projects
-    </div>
-  </div>
+  </nav>
+  <!--Below code is responsible for all sections on the page-->
+  <main class="page-sections">
+    <section class="welcome-section">
+      <div class="welcome-section-text">
+        <div class="welcome-section-text-top">
+          Hi, I am Dawid Szymański
+        </div>
+        <div class="welcome-section-text-bottom">
+          Full Stack Developer
+        </div>
+      </div>
+      <div class="welcome-section-image">
+        <img src="Temp files/287256822_2238881652942740_1483456993266898158_n.png" style="width: 500px">
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="section-headers">
+        About Me
+      </div>
+      <div>
+        <p class="about-section-text">
+          I am a 26 year old curently living and working in Warsaw.  
+        </p>
+        <p class="about-section-text">
+          I have spend majority of my teenage years living abroad in 
+          United Kingdom where I studied software development at Uxbridge 
+          College. 
+        </p>
+        <p class="about-section-text">
+          My last 6 months were focused on speding some of my free time to study programming and build 
+          my own projects in order to achieve my goal of a programming job.
+        </p>
+      </div>
+    </section>
+    <section class="resume-section">
+      <div class="section-headers">
+        Resume
+      </div>
+      <div class="resume-section-cv-window">    
+        <a href="Temp files/umowa.pdf" target="_blank">Click to view full screen PDF</a>
+      </div>
+    </section>
+    <section class="projects-section">
+      <div class="section-headers">
+        Projects
+      </div>
+      <div class="project-section-contents">
+        <div class="project-1">
+          Project 1
+        </div>
+        <div class="project-2">
+          Project 2
+        </div>
+        <div class="project-buttons">
+          <div class="project-button-1" onclick="projectsDisplay()">
+            button 1
+          </div>
+          <div class="project-button-2" onclick="projectsDisplay()">
+            button 2
+          </div>          
+        </div>
+      </div>
+    </section>
+    <footer>
+      Copyright © 2023 Dawid Szymański
+    </footer>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
