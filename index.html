@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawid Szymański - Personal Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d9be828467.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="Styles/variables.css">
+  <link rel="stylesheet" href="Styles/navbar.css">
+  <link rel="stylesheet" href="Styles/content.css">
+  <link rel="stylesheet" href="Styles/general.css">
+  
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="top-button">
+      <div class="top-button-icon">
+        <i class="fa-solid fa-arrow-up fa-beat"></i>
+      </div>
+      <div class="top-button-text">
+        Back to Top
+      </div>
+    </div>
+    <div class="about-button" onclick="pageScroll()">
+      About
+    </div>
+    <div class="resume-button"  onclick="pageScroll()">
+      Resume
+    </div>
+    <div class="projects-button"  onclick="pageScroll()">
+      Projects
+    </div>
+    <div class="color-mode-button" onclick="darkLightMode()">
+      <i id="icon-change" class="fa fa-sun fa-beat"></i>
+    </div>
+  </div>
+  <div class="page-sections">
+    <div class="welcome-section">
+      Welcome
+    </div>
+    <div class="about-section">
+      About
+    </div>
+    <div class="resume-section">
+      Resume
+    </div>
+    <div class="projects-section">
+      Projects
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

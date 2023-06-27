@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-black);
+  height: 3000px;
+  transition: background-color 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+.light-mode-body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.light-mode-nav-bar {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-black);
+}
+

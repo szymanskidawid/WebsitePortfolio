@@ -1,0 +1,52 @@
+.nav-bar {
+  background-color: var(--color-black);
+  border-bottom: 3px solid var(--color-white);
+  color: var(--color-white);
+  font-family: Kanit, Arial;
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.about-button,
+.resume-button,
+.projects-button,
+.color-mode-button,
+.top-button {
+  margin-right: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  transition: color 0.15s;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  padding: 5px 20px 5px 20px;
+}
+
+.color-mode-button {
+  width: 30px;
+  text-align: center;
+}
+
+.top-button {
+  display: flex;
+  width: 65px;
+}
+
+.top-button-text {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.about-button:hover,
+.resume-button:hover,
+.projects-button:hover,
+.color-mode-button:hover,
+.top-button:hover {
+  color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+

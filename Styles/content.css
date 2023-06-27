@@ -1,0 +1,29 @@
+.page-sections {
+  color: yellow;
+  z-index: 90;
+  margin-top: 78px;
+}
+
+.welcome-section,
+.about-section,
+.resume-section,
+.projects-section {
+  width: 1fr;
+  height: 500px;
+}
+
+.welcome-section {
+  background-color: blue;
+}
+
+.about-section {
+  background-color: red;
+}
+
+.resume-section {
+  background-color: green;
+}
+
+.projects-section {
+  background-color: orange;
+}
