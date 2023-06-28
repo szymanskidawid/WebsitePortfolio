@@ -2,3 +2,13 @@
 .resume-section {
 
 }
+
+.resume-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resume-section-text {
+  font-size: 20px;
+  text-align: left;
+}
