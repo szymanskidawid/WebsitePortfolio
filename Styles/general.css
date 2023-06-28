@@ -21,6 +21,22 @@ body {
   border-color: var(--color-black);
 }
 
+.all-btns {
+  transition: color 0.15s;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.all-btns:hover {
+  color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+
+.text-highlights {
+  color: red;
+}
+
 footer {
   text-align: center;
 }

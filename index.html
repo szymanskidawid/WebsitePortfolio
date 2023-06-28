@@ -15,7 +15,11 @@
   <!--Linked CSS files-->
   <link rel="stylesheet" href="Styles/variables.css">
   <link rel="stylesheet" href="Styles/navbar.css">
-  <link rel="stylesheet" href="Styles/content.css">
+  <link rel="stylesheet" href="Styles/Page Sections/section.css">
+  <link rel="stylesheet" href="Styles/Page Sections/welcome.css">
+  <link rel="stylesheet" href="Styles/Page Sections/about.css">
+  <link rel="stylesheet" href="Styles/Page Sections/resume.css">
+  <link rel="stylesheet" href="Styles/Page Sections/projects.css">
   <link rel="stylesheet" href="Styles/general.css">
   
 
@@ -23,36 +27,54 @@
 <body>
   <!--Below code is responsible for navigation bar with buttons-->
   <nav class="nav-bar">
-    <div class="top-button">
-      <div class="top-button-icon">
-        <i class="fa-solid fa-arrow-up fa-beat"></i>
+    <div class="language-buttons">
+      <div class="all-btns polish-language-button">
+        <img src="Flags/Flag_of_Poland.svg.png" class="fa-beat">
       </div>
-      <div class="top-button-text">
-        Back to Top
+      <div class="all-btns english-language-button">
+        <img src="Flags/Flag_of_Great_Britain_(1707–1800).svg.png" class="fa-beat">
       </div>
     </div>
-    <div class="about-button" onclick="pageScroll()">
-      About
-    </div>
-    <div class="resume-button"  onclick="pageScroll()">
-      Resume
-    </div>
-    <div class="projects-button"  onclick="pageScroll()">
-      Projects
-    </div>
-    <div class="color-mode-button" onclick="darkLightMode()">
-      <i id="icon-change" class="fa fa-sun fa-beat"></i>
-    </div>
+    <div class="nav-bar-right">
+      <div class="all-btns top-button">
+        <div class="top-button-icon">
+          <i class="fa-solid fa-arrow-up fa-beat"></i>
+        </div>
+        <div class="top-button-text">
+          Back to Top
+        </div>
+      </div>
+      <div class="all-btns about-button" onclick="pageScroll()">
+        About
+      </div>
+      <div class="all-btns resume-button"  onclick="pageScroll()">
+        Resume
+      </div>
+      <div class="all-btns projects-button"  onclick="pageScroll()">
+        Projects
+      </div>
+      <div class="all-btns color-mode-button" onclick="darkLightMode()">
+        <i id="icon-change" class="fa fa-sun fa-beat"></i>
+      </div>
+    </div>  
   </nav>
   <!--Below code is responsible for all sections on the page-->
   <main class="page-sections">
     <section class="welcome-section">
       <div class="welcome-section-text">
         <div class="welcome-section-text-top">
-          Hi, I am Dawid Szymański
+          Hi, I am <span class="text-highlights">Dawid Szymański</span>
         </div>
         <div class="welcome-section-text-bottom">
           Full Stack Developer
+        </div>
+        <div class="welcome-section-contact">
+          <div class="all-btns github-button">
+            <i id="icon-github" class="fa-brands fa-github fa-beat fa-2xl" onclick="websiteLinks()"></i>
+          </div>
+          <div class="all-btns linkedin-button">
+            <i id="icon-linkedin" class="fa-brands fa-linkedin fa-beat fa-2xl" onclick="websiteLinks()"></i>
+          </div>    
         </div>
       </div>
       <div class="welcome-section-image">
@@ -92,17 +114,60 @@
       </div>
       <div class="project-section-contents">
         <div class="project-1">
-          Project 1
-        </div>
+          <div class="project-1-header">
+            Portfolio Website
+          </div>
+          <div class="project-1-text">
+            I have created this very website to display my Front-End Development skills 
+            and have my own place to add everything that involve my employment history 
+            and current programming abilities.
+          </div>
+          <div class="project-1-images">
+            <img src="https://picsum.photos/200/300?random=1">
+            <img src="https://picsum.photos/200/300?random=2">
+          </div>
+          <div class="project-1-technologies">
+            <div class="project-1-technologies-header">
+              Technologies Used for this Project:
+            </div>
+            <div class="project-1-icons">
+              <i class="project-icons fa-brands fa-html5 fa-beat"></i>
+              <i class="project-icons fa-brands fa-css3-alt fa-beat"></i>
+              <i class="project-icons fa-brands fa-js fa-beat"></i>
+            </div>
+          </div>
+        </div>  
         <div class="project-2">
-          Project 2
+          <div class="project-2-header">
+            Employee Management App
+          </div>
+          <div class="project-2-text">
+            This application is a display of my Full Stack Development skills and it is a 
+            basic version of employee management software that could be used in HR department.
+            This program allows user to create/edit/delete data that automatically updates in
+            a SQL Database.
+          </div>
+          <div class="project-2-images">
+            <img src="https://picsum.photos/200/300?random=1">
+            <img src="https://picsum.photos/200/300?random=2">
+          </div>
+          <div class="project-2-technologies">
+            <div class="project-2-technologies-header">
+              Technologies Used for this Project:
+            </div>
+            <div class="project-2-icons">
+              <img src="Icons/c-icon-455x512-nnvx09v8.png" class="project-icons fa-beat"></i>
+              <img src="Icons/3582.dev-tools-Windows-Forms-release-notes.jpg" class="project-icons fa-beat"></i>
+              <img src="Icons/4299956.png" class="project-icons fa-beat"></i>
+            </div>
+          </div>
         </div>
         <div class="project-buttons">
-          <div class="project-button-1" onclick="projectsDisplay()">
-            button 1
+          <div class="all-btns project-button-1" onclick="projectsDisplay()">
+            Portfolio Website
           </div>
-          <div class="project-button-2" onclick="projectsDisplay()">
-            button 2
+          <div class="all-btns project-button-2" onclick="projectsDisplay()">
+            Employee Management App
           </div>          
         </div>
       </div>

@@ -1,0 +1,42 @@
+/* Welcome section */
+.welcome-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.welcome-section-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome-section-text-top {
+  font-size: 70px;
+}
+
+.welcome-section-text-bottom {
+  font-size: 50px;
+}
+
+.welcome-section-contact {
+  margin-top: 50px;
+  display: flex;
+}
+
+.github-button,
+.linkedin-button {
+  padding: 10px 15px 10px 15px;
+  margin-right: 50px;
+}
+
+.welcome-section-image {
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-section-image img {
+  transform: scale(1.5);
+}

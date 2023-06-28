@@ -6,10 +6,32 @@
   font-size: 25px;
   font-weight: 700;
   display: flex;
-  justify-content: flex-end;
   position: fixed;
   width: 100%;
   z-index: 100;
+}
+
+.language-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.language-buttons img {
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.polish-language-button,
+.english-language-button {
+  margin-left: 40px;
+  padding: 10px 15px 2px 15px;
+}
+
+.nav-bar-right {
+  display: flex;
+  align-items: center;
 }
 
 .about-button,
@@ -20,11 +42,7 @@
   margin-right: 15px;
   margin-top: 12px;
   margin-bottom: 12px;
-  transition: color 0.15s;
-  border: 2px solid transparent;
-  border-radius: 2px;
   padding: 5px 20px 5px 20px;
-  cursor: pointer;
 }
 
 .color-mode-button {
@@ -40,14 +58,5 @@
 .top-button-text {
   padding-left: 10px;
   font-size: 12px;
-}
-
-.about-button:hover,
-.resume-button:hover,
-.projects-button:hover,
-.color-mode-button:hover,
-.top-button:hover {
-  color: var(--color-purple);
-  border-color: var(--color-purple);
 }
 

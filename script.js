@@ -44,6 +44,23 @@ function scrollToPosition(button, scroll)
   });
 }
 
+//Function will take user to linked websites.
+function websiteLinks() {
+  const github = document.getElementById("icon-github");
+  const linkedin = document.getElementById("icon-linkedin");
+
+  github.addEventListener("click", function ()
+  {
+    window.open("https://github.com/szynanski", "_blank");
+  });
+
+  linkedin.addEventListener("click", function ()
+  {
+    window.open("https://linkedin.com", "_blank");
+  });
+  
+}
+
 //Responsible for hide and display of projects using buttons.
 function projectsDisplay()
 {
@@ -53,12 +70,12 @@ function projectsDisplay()
   const project2 = document.getElementsByClassName("project-2")[0];
 
   button1.addEventListener('click', function() {
-    project1.style.display = 'none';
-    project2.style.display = 'block';
+    project1.style.display = 'block';
+    project2.style.display = 'none';
   });
   
   button2.addEventListener('click', function() {
-    project1.style.display = 'block';
-    project2.style.display = 'none';
+    project1.style.display = 'none';
+    project2.style.display = 'block';
   });
 }
