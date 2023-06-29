@@ -1,9 +1,8 @@
 /* About section */
 .about-section {
-
+  text-align: center;
 }
 
 .about-section-text {
-  margin-top: 50px;
   font-size: 40px;
 }

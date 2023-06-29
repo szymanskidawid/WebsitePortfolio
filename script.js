@@ -62,20 +62,38 @@ function websiteLinks() {
 }
 
 //Responsible for hide and display of projects using buttons.
-function projectsDisplay()
+function projectsDisplay() 
 {
   const button1 = document.getElementsByClassName("project-button-1")[0];
   const button2 = document.getElementsByClassName("project-button-2")[0];
   const project1 = document.getElementsByClassName("project-1")[0];
   const project2 = document.getElementsByClassName("project-2")[0];
 
-  button1.addEventListener('click', function() {
-    project1.style.display = 'block';
-    project2.style.display = 'none';
+  button1.addEventListener('click', function() 
+  {
+    fadeOutAndIn(project2, project1)
   });
-  
-  button2.addEventListener('click', function() {
-    project1.style.display = 'none';
-    project2.style.display = 'block';
+
+  button2.addEventListener('click', function() 
+  {
+    fadeOutAndIn(project1, project2)
   });
 }
+
+//Function responsible for Fade Out and Fade In of two containers.
+function fadeOutAndIn (fadeOut, fadeIn)
+{
+  if (fadeOut.style.opacity !== '0') 
+    {
+      fadeOut.style.animation = 'fade-out 0.5s ease';
+      
+      setTimeout(function() 
+      {
+        fadeOut.style.display = 'none';
+        fadeIn.style.display = 'grid';
+        fadeIn.style.animation = 'fade-in 0.5s ease';
+      }, 500);
+    }
+}
+
+

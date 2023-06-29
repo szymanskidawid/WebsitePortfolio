@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dawid Szymański - Personal Portfolio</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawid Szymański - Personal Portfolio</title>
 
-  <!--Linked font "Kanit" that is used on the whole website-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
-  <!--Linked Font Awesome that is used for icons on the website-->
-  <script src="https://kit.fontawesome.com/d9be828467.js" crossorigin="anonymous"></script>
+    <!--Linked font "Kanit" that is used on the whole website-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+    <!--Linked Font Awesome that is used for icons on the website-->
+    <script src="https://kit.fontawesome.com/d9be828467.js" crossorigin="anonymous"></script>
 
-  <!--Linked CSS files-->
-  <link rel="stylesheet" href="Styles/variables.css">
-  <link rel="stylesheet" href="Styles/navbar.css">
-  <link rel="stylesheet" href="Styles/Page Sections/section.css">
-  <link rel="stylesheet" href="Styles/Page Sections/welcome.css">
-  <link rel="stylesheet" href="Styles/Page Sections/about.css">
-  <link rel="stylesheet" href="Styles/Page Sections/resume.css">
-  <link rel="stylesheet" href="Styles/Page Sections/projects.css">
-  <link rel="stylesheet" href="Styles/general.css">
-  
+    <!--Linked CSS files-->
+    <link rel="stylesheet" href="Styles/variables.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/Page Sections/sections.css">
+    <link rel="stylesheet" href="Styles/Page Sections/welcome.css">
+    <link rel="stylesheet" href="Styles/Page Sections/about.css">
+    <link rel="stylesheet" href="Styles/Page Sections/resume.css">
+    <link rel="stylesheet" href="Styles/Page Sections/projects.css">
+    <link rel="stylesheet" href="Styles/general.css">
+    
 
-</head>
-<body>
-  <!--Below code is responsible for navigation bar with buttons-->
-  <nav class="nav-bar">
-    <div class="language-buttons">
-      <div class="all-btns polish-language-button">
-        <img src="Flags/Flag_of_Poland.svg.png" class="fa-beat">
-      </div>
-      <div class="all-btns english-language-button">
-        <img src="Flags/Flag_of_Great_Britain_(1707–1800).svg.png" class="fa-beat">
-      </div>
-    </div>
-    <div class="nav-bar-right">
-      <div class="all-btns top-button">
-        <div class="top-button-icon">
-          <i class="fa-solid fa-arrow-up fa-beat"></i>
+  </head>
+  <body>
+    <!--Below code is responsible for navigation bar with buttons-->
+    <nav class="nav-bar">
+      <div class="language-buttons">
+        <div class="all-btns polish-language-button">
+          <img src="Flags/Flag_of_Poland.svg.png" class="fa-beat">
         </div>
-        <div class="top-button-text">
-          Back to Top
+        <div class="all-btns english-language-button">
+          <img src="Flags/Flag_of_Great_Britain_(1707–1800).svg.png" class="fa-beat">
         </div>
       </div>
-      <div class="all-btns about-button" onclick="pageScroll()">
-        About
-      </div>
-      <div class="all-btns resume-button"  onclick="pageScroll()">
-        Resume
-      </div>
-      <div class="all-btns projects-button"  onclick="pageScroll()">
-        Projects
-      </div>
-      <div class="all-btns color-mode-button" onclick="darkLightMode()">
-        <i id="icon-change" class="fa fa-sun fa-beat"></i>
-      </div>
-    </div>  
-  </nav>
-  <!--Below code is responsible for all sections on the page-->
-  <main class="page-sections">
-    <section class="welcome-section">
-      <div class="welcome-section-text">
-        <div class="welcome-section-text-top">
-          Hi, I am <span class="text-highlights">Dawid Szymański</span>
-        </div>
-        <div class="welcome-section-text-bottom">
-          Full Stack Developer
-        </div>
-        <div class="welcome-section-contact">
-          <div class="all-btns github-button">
-            <i id="icon-github" class="fa-brands fa-github fa-beat fa-2xl" onclick="websiteLinks()"></i>
+      <div class="nav-bar-right">
+        <div class="all-btns top-button">
+          <div class="top-button-icon">
+            <i class="fa-solid fa-arrow-up fa-beat"></i>
           </div>
-          <div class="all-btns linkedin-button">
-            <i id="icon-linkedin" class="fa-brands fa-linkedin fa-beat fa-2xl" onclick="websiteLinks()"></i>
-          </div>    
+          <div class="top-button-text">
+            Back to Top
+          </div>
         </div>
-      </div>
-      <div class="welcome-section-image">
-        <img src="Temp files/287256822_2238881652942740_1483456993266898158_n.png" style="width: 500px">
-      </div>
-    </section>
-    <section class="about-section">
-      <div class="section-headers">
+        <div class="all-btns about-button" onclick="pageScroll()">
+          About
+        </div>
+        <div class="all-btns resume-button"  onclick="pageScroll()">
+          Resume
+        </div>
+        <div class="all-btns projects-button"  onclick="pageScroll()">
+          Projects
+        </div>
+        <div class="all-btns color-mode-button" onclick="darkLightMode()">
+          <i id="icon-change" class="fa fa-sun fa-beat"></i>
+        </div>
+      </div>  
+    </nav>
+    <!--Below code is responsible for all sections on the page-->
+    <main class="page-sections">
+      <section class="welcome-section">
+        <div class="welcome-section-text">
+          <div class="welcome-section-text-top">
+            Hi, I am <span class="text-highlights">Dawid Szymański</span>
+          </div>
+          <div class="welcome-section-text-bottom">
+            Full Stack Developer
+          </div>
+          <div class="welcome-section-contact">
+            <div class="all-btns github-button">
+              <i id="icon-github" class="fa-brands fa-github fa-beat fa-2xl" onclick="websiteLinks()"></i>
+            </div>
+            <div class="all-btns linkedin-button">
+              <i id="icon-linkedin" class="fa-brands fa-linkedin fa-beat fa-2xl" onclick="websiteLinks()"></i>
+            </div>    
+          </div>
+        </div>
+        <div class="welcome-section-image">
+          <img src="Temp files/287256822_2238881652942740_1483456993266898158_n.png" style="width: 500px">
+        </div>
+      </section>
+      <div class="section-headers fa-fade">
         About Me
       </div>
-      <div>
+      <section class="about-section">
         <p class="about-section-text">
           I am a 26 year old curently living and working in Warsaw.  
         </p>
@@ -98,28 +97,27 @@
           My last 6 months were focused on speding some of my free time to study programming and build 
           my own projects in order to achieve my goal of a programming job.
         </p>
-      </div>
-    </section>
-    <section class="resume-section">
-      <div class="section-headers">
+      </section>
+      <div class="section-headers fa-fade">
         Resume
       </div>
-      <div class="resume-section-content">
+      <section class="resume-section">
         <div class="resume-section-cv">    
-          <a href="Temp files/umowa.pdf" target="_blank">Click to view full screen PDF</a>
+          <a href="Temp files/umowa.pdf" target="_blank">
+            <img class="blurred-cv" src="Temp files/blurred-cv.png">
+          </a>
+          <p>Click the image to open my CV in a new window.</p>
         </div>
         <div class="resume-section-text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur ad, earum placeat et esse iure eius corrupti magni, id soluta aut labore neque obcaecati eligendi aliquam illo eum sunt.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus repudiandae molestiae dolorum ducimus ipsam tempore dicta sapiente. Ipsa modi tempora harum magni voluptates autem dolor doloremque quia blanditiis sequi.
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima dolore fugiat sint quae dignissimos veritatis rerum nihil corrupti blanditiis possimus deleniti quas sapiente itaque amet, tempora explicabo mollitia hic voluptatem?
         </div>
-      </div>
-    </section>
-    <section class="projects-section">
-      <div class="section-headers">
+      </section>
+      <div class="section-headers fa-fade">
         Projects
       </div>
-      <div class="project-section-contents">
+      <section class="projects-section">
         <div class="project-1">
           <div class="project-1-header">
             Portfolio Website
@@ -130,22 +128,22 @@
             and current programming abilities.
           </div>
           <div class="project-1-images">
-            <img src="https://picsum.photos/200/300?random=1">
-            <img src="https://picsum.photos/200/300?random=2">
-            <img src="https://picsum.photos/200/300?random=3">
+            <img class="project-images" src="https://picsum.photos/450/300?random=1">
+            <img class="project-images" src="https://picsum.photos/450/300?random=2">
+            <img class="project-images" src="https://picsum.photos/450/300?random=3">
           </div>
           <div class="project-1-technologies">
             <div class="project-1-technologies-header">
               Technologies Used for this Project:
             </div>
             <div class="project-1-icons">
-              <div class="project-icons">
+              <div class="project-icon">
                 <i class="fa-brands fa-html5 fa-beat fa-2xl"></i>
               </div>
-              <div class="project-icons">
+              <div class="project-icon">
                 <i class="fa-brands fa-css3-alt fa-beat fa-2xl"></i>
               </div>
-              <div class="project-icons">
+              <div class="project-icon">
                 <i class="fa-brands fa-js fa-beat fa-2xl"></i>
               </div>
             </div>
@@ -162,22 +160,22 @@
             a SQL Database.
           </div>
           <div class="project-2-images">
-            <img src="https://picsum.photos/200/300?random=1">
-            <img src="https://picsum.photos/200/300?random=2">
-            <img src="https://picsum.photos/200/300?random=3">
+            <img class="project-images" src="https://picsum.photos/450/300?random=4">
+            <img class="project-images" src="https://picsum.photos/450/300?random=5">
+            <img class="project-images" src="https://picsum.photos/450/300?random=6">
           </div>
           <div class="project-2-technologies">
             <div class="project-2-technologies-header">
               Technologies Used for this Project:
             </div>
             <div class="project-2-icons">
-              <div class="project-icons">
+              <div class="project-icon">
                 <img src="Icons/c-icon-455x512-nnvx09v8.png" class="project-icons fa-beat"></i>
               </div>
-              <div class="project-icons">
+              <div class="project-icon">
                 <img src="Icons/3582.dev-tools-Windows-Forms-release-notes.jpg" class="project-icons fa-beat"></i>
               </div>
-              <div class="project-icons">
+              <div class="project-icon">
                 <img src="Icons/4299956.png" class="project-icons fa-beat"></i>
               </div>
             </div>
@@ -197,12 +195,11 @@
             Employee Management App
           </div>          
         </div>
-      </div>
-    </section>
-    <footer>
-      Copyright © 2023 Dawid Szymański
-    </footer>
-  </main>
-  <script src="script.js"></script>
-</body>
+      </section>
+      <footer>
+        Copyright © 2023 Dawid Szymański
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

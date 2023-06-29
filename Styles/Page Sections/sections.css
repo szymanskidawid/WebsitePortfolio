@@ -3,12 +3,14 @@
   margin-top: 78px;
 }
 
-.welcome-section,
+.welcome-section {
+  height: 870px;
+}
+
 .about-section,
 .resume-section,
 .projects-section {
-  height: 870px;
-  text-align: center;
+  height: 710px;
 }
 
 .section-headers {
