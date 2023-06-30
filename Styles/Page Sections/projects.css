@@ -20,13 +20,16 @@
 .project-1-header,
 .project-2-header {
   font-size: 30px;
-  text-decoration: underline;
 }
 
 /* Text */
 .project-1-text,
 .project-2-text {
   font-size: 20px;
+}
+
+.projects-paragraphs {
+  margin-top: 10px;
 }
 
 /* Images */
@@ -36,10 +39,6 @@
   margin-right: 50px;
   display: flex;
   justify-content: space-between;
-}
-
-.project-images {
-
 }
 
 /* Technologies Used */

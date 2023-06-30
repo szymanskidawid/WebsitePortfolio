@@ -1,10 +1,13 @@
 /* Code in this file is responsible for seperate sections visuals */
 .page-sections {
   margin-top: 78px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .welcome-section {
   height: 870px;
+  
 }
 
 .about-section,

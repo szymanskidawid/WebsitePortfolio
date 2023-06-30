@@ -1,16 +1,17 @@
 //Responsible for switching between dark and light mode.
-function darkLightMode() 
-{
+function darkLightMode() {
   const body = document.body;
   const navBar = document.querySelector(".nav-bar");
-  const icon = document.getElementById("icon-change");
+  const icons = document.getElementsByClassName("icon-change");
 
   body.classList.toggle("light-mode-body");
   navBar.classList.toggle("light-mode-nav-bar");
 
   const isLightMode = body.classList.contains("light-mode-body");
 
-  icon.className = isLightMode ? "fas fa-moon fa-beat" : "fas fa-sun fa-beat";
+  for (let i = 0; i < icons.length; i++) {
+    icons[i].className = isLightMode ? "icon-change fas fa-moon fa-beat" : "icon-change fas fa-sun fa-beat";
+  }
 }
 
 //Responsible for page scrolling depending on which button has been clicked.
@@ -94,6 +95,36 @@ function fadeOutAndIn (fadeOut, fadeIn)
         fadeIn.style.animation = 'fade-in 0.5s ease';
       }, 500);
     }
+}
+
+//Function responsible for text translations between English and Polish.
+function toggleLanguage(language) 
+{
+  const elements = document.getElementsByClassName('lang-toggle');
+
+  fetch('languages.json')
+    .then(response => response.json())
+    .then(data => 
+    {
+      for (let i = 0; i < elements.length; i++) 
+      {
+        const element = elements[i];
+        const key = element.getAttribute('data-key');
+        const defaultText = data.english[key];
+        const translatedText = data[language][key];
+
+        if (translatedText) {
+          element.textContent = translatedText;
+        } else {
+          element.textContent = defaultText;
+        }
+      }
+    })
+
+    .catch(error => 
+    {
+      console.error('Error loading language data:', error);
+    });
 }
 
 

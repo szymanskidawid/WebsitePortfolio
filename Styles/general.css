@@ -12,6 +12,11 @@ body {
   text-align: center;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .light-mode-body {
   background-color: var(--color-white);
   color: var(--color-black);
@@ -37,6 +42,10 @@ body {
 
 .text-highlights {
   color: red;
+}
+
+.text-underline {
+  text-decoration: underline;
 }
 
 footer {
