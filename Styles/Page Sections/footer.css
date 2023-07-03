@@ -1,0 +1,32 @@
+footer {
+  margin-top: 15px;
+  border-top: 3px solid var(--color-white);
+}
+
+.footer-section {
+  display: grid;
+  row-gap: 10px;
+}
+
+.footer-contacts {
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2px;
+  margin-top: 15px;
+  margin-left: 100px;
+}
+
+.footer-contacts-mail,
+.footer-contacts-github,
+.footer-contacts-linkedin {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer-btns {
+  margin-right: 15px;
+}
+
+.footer-copyright {
+  margin-bottom: 40px;
+}
+
