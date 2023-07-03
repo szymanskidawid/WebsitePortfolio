@@ -20,23 +20,26 @@
     <link rel="stylesheet" href="Styles/Page Sections/about.css">
     <link rel="stylesheet" href="Styles/Page Sections/resume.css">
     <link rel="stylesheet" href="Styles/Page Sections/projects.css">
+    <link rel="stylesheet" href="Styles/Page Sections/footer.css">
     <link rel="stylesheet" href="Styles/general.css">
   </head>
   <body>
-    <!--Below code is responsible for navigation bar with buttons-->
-    <nav class="nav-bar">
+    <!--Navigation bar with buttons-->
+    <header class="nav-bar">
+      <!--Changing language between English and Polish-->
       <div class="language-buttons">
         <div class="all-btns english-language-button" onclick="toggleLanguage('english')">
-          <img src="Flags/Flag_of_Great_Britain_(1707–1800).svg.png" class="fa-beat">
+          <img src="Flags/flag-uk.png" class="fa-beat">
         </div>
-        <div class="all-btns polish-language-button" onclick="toggleLanguage('polish')">
-          <img src="Flags/Flag_of_Poland.svg.png" class="fa-beat">
+        <div class="all-btns polish-language-button inactive" onclick="toggleLanguage('polish')">
+          <img src="Flags/flag-pl.png" class="fa-beat">
         </div>  
       </div>
-      <div class="nav-bar-right">
+      <!--Right side buttons-->
+      <nav class="nav-bar-right">
         <div class="all-btns top-button" onclick="pageScroll()">
           <div class="top-button-icon">
-            <i class="fa-solid fa-arrow-up fa-beat"></i>
+            <i class="fa-solid fa-arrow-up fa-bounce"></i>
           </div>
           <div class="top-button-text lang-toggle" data-key="topBtn">
             Back to Top
@@ -51,37 +54,45 @@
         <div class="all-btns projects-button lang-toggle" data-key="projectsBtn" onclick="pageScroll()">
           Projects
         </div>
+        <!--Changing Light/Dark mode-->
         <div class="all-btns color-mode-button" onclick="darkLightMode()">
           <i class="icon-change fa fa-sun fa-beat"></i>
         </div>
-      </div>  
-    </nav>
-    <!--Below code is responsible for all sections on the page-->
+      </nav>  
+    </header>
+    <!--All sections on the page-->
     <main class="page-sections">
+      <!--Welcome section with intro, contacts and my picture-->
       <section class="welcome-section">
+        <!--Left side of Welcome section - Intro text + contact details-->
         <div class="welcome-section-text">
-          <div class="welcome-section-text-top lang-toggle" data-key="welcomeText">
+          <p class="welcome-section-text-top lang-toggle" data-key="welcomeText">
             Hi, I am <span class="text-highlights">Dawid Szymański</span>
-          </div>
-          <div class="welcome-section-text-bottom">
+          </p>
+          <p class="welcome-section-text-bottom">
             Full Stack Developer
-          </div>
+          </p>
           <div class="welcome-section-contact">
+            <div class="all-btns mail-button">
+              <i class="icon-mail fa-regular fa-envelope fa-2xl"></i>
+            </div>   
             <div class="all-btns github-button">
-              <i id="icon-github" class="fa-brands fa-github fa-beat fa-2xl" onclick="websiteLinks()"></i>
+              <i class="icon-github fa-brands fa-github fa-2xl" onclick="websiteLinks()"></i>
             </div>
             <div class="all-btns linkedin-button">
-              <i id="icon-linkedin" class="fa-brands fa-linkedin fa-beat fa-2xl" onclick="websiteLinks()"></i>
-            </div>    
+              <i class="icon-linkedin fa-brands fa-linkedin fa-2xl" onclick="websiteLinks()"></i>
+            </div>
           </div>
         </div>
+        <!--Right side of Welcome section - My picture-->
         <div class="welcome-section-image">
-          <img src="Temp files/287256822_2238881652942740_1483456993266898158_n.png" style="width: 500px">
+          <img src="Temp files/myPicture.png" style="width: 500px">
         </div>
       </section>
-      <div class="section-headers fa-fade lang-toggle" data-key="aboutMeHeader">
+      <header class="section-headers fa-fade lang-toggle" data-key="aboutMeHeader">
         About Me
-      </div>
+      </header>
+      <!--About Me section-->
       <section class="about-section">
         <p class="about-section-text lang-toggle" data-key="aboutMeText1">
           I am a 26 year old curently living and working in <span class="text-highlights">Warsaw</span>.  
@@ -96,18 +107,21 @@
           my own projects in order to achieve my <span class="text-highlights">goal of a career in programming</span>.
         </p>
       </section>
-      <div class="section-headers fa-fade lang-toggle" data-key="resumeHeader">
+      <header class="section-headers fa-fade lang-toggle" data-key="resumeHeader">
         Resume
-      </div>
+      </header>
+      <!--Resume section with CV Link + Skills text-->
       <section class="resume-section">
+        <!--CV Link-->
         <div class="resume-section-cv">    
-          <a href="Temp files/umowa.pdf" target="_blank">
+          <a href="Temp files/tempPDF.pdf" target="_blank">
             <img class="blurred-cv" src="Temp files/blurred-cv.png">
           </a>
           <p class="text-highlights lang-toggle" data-key="resumeTextLeft">
             Click the image to open my CV in a new window.
           </p>
         </div>
+        <!--Resume text-->
         <div class="resume-section-text">
           <p data-key="resumeTextRight1 lang-toggle">
             Throughout my programming journey I have accumulated knowledge of using various frameworks, languages and libraries:
@@ -127,19 +141,23 @@
             <li>HTML 5</li>
             <li>CSS 3</li>
             <li>JavaScript</li>
+            <li>JSON</li>
             <li class="lang-toggle" data-key="resumeTextList1">jQuery (basics)</li>
-            <li class="lang-toggle" data-key="resumeTextList2">ReactJS (basics)</li>
+            <li class="lang-toggle" data-key="resumeTextList2">Bootstrap (basics)</li>
           </ul>
         </div>
       </section>
-      <div class="section-headers fa-fade lang-toggle" data-key="projectsHeader">
+      <header class="section-headers fa-fade lang-toggle" data-key="projectsHeader">
         Projects
-      </div>
+      </header>
+      <!--Project section with my work-->
       <section class="projects-section">
+        <!--Project 1 - Text, GIFs and technologies used-->
         <div class="project-1">
-          <div class="project-1-header text-underline lang-toggle" data-key="project1Header">
+          <!--Project text-->
+          <header class="project-1-header text-underline lang-toggle" data-key="project1Header">
             Portfolio Website
-          </div>
+          </header>
           <div class="project-1-text">
             <p class="lang-toggle" data-key="project1Text1">
               I have created this very website to display my Front-End Development skills 
@@ -157,32 +175,39 @@
               very common practices that help appeal to wider range of users. 
             </p>
           </div>
+          <!--Project GIFs-->
           <div class="project-1-images">
             <img src="https://picsum.photos/450/300?random=1">
             <img src="https://picsum.photos/450/300?random=2">
             <img src="https://picsum.photos/450/300?random=3">
           </div>
+          <!--Project Technologies-->
           <div class="project-1-technologies">
-            <div class="project-1-technologies-header lang-toggle" data-key="project1Tech">
+            <header class="project-1-technologies-header lang-toggle" data-key="project1Tech">
               Technologies Used for this Project:
-            </div>
+            </header>
             <div class="project-1-icons">
               <div class="project-icon">
-                <i class="fa-brands fa-html5 fa-beat fa-2xl"></i>
+                <i class="fa-brands fa-html5 fa-2xl"></i>
               </div>
               <div class="project-icon">
-                <i class="fa-brands fa-css3-alt fa-beat fa-2xl"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl"></i>
               </div>
               <div class="project-icon">
-                <i class="fa-brands fa-js fa-beat fa-2xl"></i>
+                <i class="fa-brands fa-js fa-2xl"></i>
+              </div>
+              <div class="project-icon">
+                <img src="Icons/icon-json.png" class="project-icons"></i>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
+        <!--Project 2 - Text, GIFs and technologies used-->
         <div class="project-2">
-          <div class="project-2-header text-underline lang-toggle" data-key="project2Header">
+          <!--Project text-->
+          <header class="project-2-header text-underline lang-toggle" data-key="project2Header">
             Employee Management App
-          </div>
+          </header>
           <div class="project-2-text">
             <p class="lang-toggle" data-key="project2Text1">
               This application is a display of my Full Stack Development skills and it is a 
@@ -200,28 +225,31 @@
               and reduce efficiency of person using it.
             </p>
           </div>
+          <!--Project GIFs-->
           <div class="project-2-images">
             <img src="https://picsum.photos/450/300?random=4">
             <img src="https://picsum.photos/450/300?random=5">
             <img src="https://picsum.photos/450/300?random=6">
           </div>
+          <!--Project Technologies-->
           <div class="project-2-technologies">
-            <div class="project-2-technologies-header lang-toggle" data-key="project2Tech">
+            <header class="project-2-technologies-header lang-toggle" data-key="project2Tech">
               Technologies Used for this Project:
-            </div>
+            </header>
             <div class="project-2-icons">
               <div class="project-icon">
-                <img src="Icons/c-icon-455x512-nnvx09v8.png" class="project-icons fa-beat"></i>
+                <img src="Icons/icon-csharp.png" class="project-icons"></img>
               </div>
               <div class="project-icon">
-                <img src="Icons/3582.dev-tools-Windows-Forms-release-notes.jpg" class="project-icons fa-beat"></i>
+                <img src="Icons/icon-winforms.png" class="project-icons"></i>
               </div>
               <div class="project-icon">
-                <img src="Icons/4299956.png" class="project-icons fa-beat"></i>
+                <img src="Icons/icon-sql.png" class="project-icons"></i>
               </div>
             </div>
           </div>
         </div>
+        <!--Buttons that switch between projects-->
         <div class="project-buttons">
           <div class="all-btns project-button-1 lang-toggle" data-key="projectBtn1" onclick="projectsDisplay()">
             <div class="project-button-1-icon">
@@ -237,10 +265,34 @@
           </div>          
         </div>
       </section>
-      <footer>
-        Copyright © 2023 Dawid Szymański
+      <!--Footer section with contact details and copyrights-->
+      <footer class="footer-section"> 
+        <div class="footer-contacts">
+          <div class="footer-contacts-mail">
+            <div class="footer-btns">
+              <i class="icon-mail fa-regular fa-envelope fa-xl"></i>
+            </div>  
+            <p>dawidszymanski.dev@outlook.com</p>
+          </div>
+          <div class="footer-contacts-github">
+            <div class="footer-btns">
+              <i class="icon-github fa-brands fa-github fa-xl" onclick="websiteLinks()"></i>
+            </div>
+            <p>szymanskidawid</p>
+          </div>
+          <div class="footer-contacts-linkedin">
+            <div class="footer-btns">
+              <i class="icon-linkedin fa-brands fa-linkedin fa-xl" onclick="websiteLinks()"></i>
+            </div>
+            <p>Dawid Szymański</p>
+          </div>
+        </div>
+        <p class="footer-copyright">
+          Copyright © 2023 Dawid Szymański
+        </p>
       </footer>
     </main>
+    <!--Links to JS and JSON files-->
     <script src="languages.json"></script>
     <script src="script.js"></script>
   </body>
