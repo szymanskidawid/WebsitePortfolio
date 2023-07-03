@@ -5,7 +5,6 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: Kanit, Arial;
-  height: 3700px;
   transition: background-color 0.15s;
   display: flex;
   flex-direction: column;
@@ -20,6 +19,7 @@ p {
 .light-mode-body {
   background-color: var(--color-white);
   color: var(--color-black);
+  border-color: var(--color-black);
 }
 
 .light-mode-nav-bar {
@@ -29,13 +29,18 @@ p {
 }
 
 .all-btns {
-  transition: color 0.15s;
   border: 2px solid transparent;
   border-radius: 5px;
+}
+
+.all-btns,
+.footer-btns {
+  transition: color 0.15s; 
   cursor: pointer;
 }
 
-.all-btns:hover {
+.all-btns:hover,
+.footer-btns:hover {
   color: var(--color-purple);
   border-color: var(--color-purple);
 }
@@ -46,15 +51,6 @@ p {
 
 .text-underline {
   text-decoration: underline;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  margin-top: 20px;
-  border-top: 3px solid var(--color-white);
 }
 
 /* Used for Fade In/Out function */

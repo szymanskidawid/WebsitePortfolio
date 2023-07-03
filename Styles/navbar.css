@@ -21,6 +21,12 @@
   width: 40px;
   border: 1px solid var(--color-black);
   border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.language-buttons .inactive img {
+  filter: grayscale(100%);
+  width: 30px;
 }
 
 .polish-language-button,
