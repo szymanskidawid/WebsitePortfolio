@@ -19,8 +19,8 @@ function pageScroll()
 {
   const topScroll = 0;
   const aboutScroll = 870;
-  const resumeScroll = 1740;
-  const projectsScroll = 2610;
+  const resumeScroll = 1730;
+  const projectsScroll = 2580;
 
   const topButton = document.getElementsByClassName("top-button")[0];
   const aboutButton = document.getElementsByClassName("about-button")[0];
@@ -46,20 +46,36 @@ function scrollToPosition(button, scroll)
 }
 
 //Function will take user to linked websites.
-function websiteLinks() {
-  const github = document.getElementById("icon-github");
-  const linkedin = document.getElementById("icon-linkedin");
+function websiteLinks()
+{
+  const mail = document.getElementsByClassName("icon-mail");
+  const github = document.getElementsByClassName("icon-github");
+  const linkedin = document.getElementsByClassName("icon-linkedin");
 
-  github.addEventListener("click", function ()
+  //I need to have a for loop for each element as two each share a class.
+  for (let i = 0; i < mail.length; i++)
   {
-    window.open("https://github.com/szynanski", "_blank");
-  });
+    mail[i].addEventListener("click", function ()
+    {
+      window.open("mailto:dawidszymanski.dev@outlook.com", "_blank");
+    });
+  }
 
-  linkedin.addEventListener("click", function ()
+  for (let i = 0; i < github.length; i++)
   {
-    window.open("https://linkedin.com", "_blank");
-  });
+    github[i].addEventListener("click", function ()
+    {
+      window.open("https://github.com/szymanskidawid", "_blank");
+    });
+  }
   
+  for (let i = 0; i < linkedin.length; i++)
+  {
+    linkedin[i].addEventListener("click", function ()
+    {
+      window.open("https://linkedin.com", "_blank");
+    });
+  }
 }
 
 //Responsible for hide and display of projects using buttons.
@@ -100,6 +116,12 @@ function fadeOutAndIn (fadeOut, fadeIn)
 //Function responsible for text translations between English and Polish.
 function toggleLanguage(language) 
 {
+  const englishBtn = document.getElementsByClassName("english-language-button")[0];
+  const polishBtn = document.getElementsByClassName("polish-language-button")[0];
+
+  languageBtnAnimation (englishBtn, polishBtn);
+  languageBtnAnimation (polishBtn, englishBtn);
+
   const elements = document.getElementsByClassName('lang-toggle');
 
   fetch('languages.json')
@@ -114,7 +136,8 @@ function toggleLanguage(language)
         const translatedText = data[language][key];
 
         if (translatedText) {
-          element.textContent = translatedText;
+          element.innerHTML = translatedText;
+          
         } else {
           element.textContent = defaultText;
         }
@@ -125,6 +148,16 @@ function toggleLanguage(language)
     {
       console.error('Error loading language data:', error);
     });
+}
+
+//Supporting function to toggleLanguage that changes button animations.
+function languageBtnAnimation (active, inactive)
+{
+  active.addEventListener("click", function()
+  {
+    active.classList.remove("inactive");
+    inactive.classList.add("inactive");
+  });
 }
 
 
