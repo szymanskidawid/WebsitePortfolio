@@ -2,10 +2,12 @@
 function darkLightMode() {
   const body = document.body;
   const navBar = document.querySelector(".nav-bar");
+  const footer = document.querySelector(".footer-section");
   const icons = document.getElementsByClassName("icon-change");
 
   body.classList.toggle("light-mode-body");
   navBar.classList.toggle("light-mode-nav-bar");
+  footer.classList.toggle("light-mode-footer");
 
   const isLightMode = body.classList.contains("light-mode-body");
 
@@ -159,5 +161,3 @@ function languageBtnAnimation (active, inactive)
     inactive.classList.add("inactive");
   });
 }
-
-
