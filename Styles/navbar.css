@@ -9,30 +9,29 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  align-items: center;
 }
 
 .language-buttons {
   display: flex;
-  align-items: center;
   margin-right: auto;
 }
 
 .language-buttons img {
-  width: 40px;
   border: 1px solid var(--color-black);
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .language-buttons .inactive img {
   filter: grayscale(100%);
-  width: 30px;
+  height: 20px;
 }
 
 .polish-language-button,
 .english-language-button {
-  margin-left: 40px;
-  padding: 10px 15px 2px 15px;
+  margin-left: 30px;
+  padding: 10px 20px 0px 20px;
 }
 
 .nav-bar-right {
@@ -65,4 +64,3 @@
   padding-left: 10px;
   font-size: 12px;
 }
-
