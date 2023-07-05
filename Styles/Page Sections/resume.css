@@ -2,23 +2,28 @@
 .resume-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.resume-section-cv {
-  text-align: center;
+.resume-section-left {
+  margin-right: 20px;
 }
 
 .blurred-cv {
   filter: blur(2px);
 }
 
-.resume-section-text {
+.resume-section-right {
+  margin-left: 20px;
   font-size: 30px;
   text-align: left;
+}
+
+.resume-section-text {
+  margin-bottom: 50px;
 }
 
 .resume-section-lists {
   font-size: 20px;
 }
-
-

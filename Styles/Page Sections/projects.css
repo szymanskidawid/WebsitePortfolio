@@ -3,6 +3,8 @@
   display: grid;
   grid-template-columns: 80% 20%;
   text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .project-1,
@@ -39,6 +41,15 @@
   margin-right: 50px;
   display: flex;
   justify-content: space-between;
+  
+}
+
+.project-1-images img,
+.project-2-images img {
+  border: 5px solid;
+  border-radius: 50px;
+  max-height: 300px;
+  max-width: 450px;
 }
 
 /* Technologies Used */
@@ -54,15 +65,16 @@
   text-decoration: underline;
 }
 
-.project-1-icons,
-.project-2-icons {
+.project-1-technologies-text-container,
+.project-2-technologies-text-container {
   display: flex;
   flex-direction: row;
+  margin-left: 30px;
 }
 
-.project-icon {
-  margin-left: 30px;
-  height: 50px;
+.project-1-technologies-text,
+.project-2-technologies-text {
+  margin-right: 30px;
 }
 
 /* Side Buttons */

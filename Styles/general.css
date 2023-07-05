@@ -9,9 +9,15 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  border-color: var(--color-white);
 }
 
 p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +31,10 @@ p {
 .light-mode-nav-bar {
   background-color: var(--color-white);
   color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+.light-mode-footer {
   border-color: var(--color-black);
 }
 
