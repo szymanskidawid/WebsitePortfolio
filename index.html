@@ -89,9 +89,9 @@
           <img src="Temp files/myPicture.png" style="width: 500px">
         </div>
       </section>
-      <header class="section-headers fa-fade lang-toggle" data-key="aboutMeHeader">
+      <h1 class="section-headers fa-fade lang-toggle" data-key="aboutMeHeader">
         About Me
-      </header>
+      </h1>
       <!--About Me section-->
       <section class="about-section">
         <p class="about-section-text lang-toggle" data-key="aboutMeText1">
@@ -107,23 +107,18 @@
           my own projects in order to achieve my <span class="text-highlights">goal of a career in programming</span>.
         </p>
       </section>
-      <header class="section-headers fa-fade lang-toggle" data-key="resumeHeader">
+      <h1 class="section-headers fa-fade lang-toggle" data-key="resumeHeader">
         Resume
-      </header>
+      </h1>
       <!--Resume section with CV Link + Skills text-->
       <section class="resume-section">
-        <!--CV Link-->
-        <div class="resume-section-cv">    
-          <a href="Temp files/tempPDF.pdf" target="_blank">
-            <img class="blurred-cv" src="Temp files/blurred-cv.png">
-          </a>
-          <p class="text-highlights lang-toggle" data-key="resumeTextLeft">
-            Click the image to open my CV in a new window.
-          </p>
-        </div>
+        <!--Resume CV Window-->
+        <div class="resume-section-left">
+          <object data="Temp files/tempPDF.pdf" type="application/pdf" style="width: 100%; height: 100%;"></object>
+        </div>        
         <!--Resume text-->
-        <div class="resume-section-text">
-          <p data-key="resumeTextRight1 lang-toggle">
+        <div class="resume-section-right">
+          <p class="resume-section-text lang-toggle" data-key="resumeTextRight1">
             Throughout my programming journey I have accumulated knowledge of using various frameworks, languages and libraries:
           </p>
           <p class="text-underline">
@@ -147,17 +142,17 @@
           </ul>
         </div>
       </section>
-      <header class="section-headers fa-fade lang-toggle" data-key="projectsHeader">
+      <h1 class="section-headers fa-fade lang-toggle" data-key="projectsHeader">
         Projects
-      </header>
+      </h1>
       <!--Project section with my work-->
       <section class="projects-section">
         <!--Project 1 - Text, GIFs and technologies used-->
         <div class="project-1">
           <!--Project text-->
-          <header class="project-1-header text-underline lang-toggle" data-key="project1Header">
+          <h2 class="project-1-header text-underline lang-toggle" data-key="project1Header">
             Portfolio Website
-          </header>
+          </h2>
           <div class="project-1-text">
             <p class="lang-toggle" data-key="project1Text1">
               I have created this very website to display my Front-End Development skills 
@@ -177,37 +172,29 @@
           </div>
           <!--Project GIFs-->
           <div class="project-1-images">
-            <img src="https://picsum.photos/450/300?random=1">
-            <img src="https://picsum.photos/450/300?random=2">
-            <img src="https://picsum.photos/450/300?random=3">
+            <img src="Temp files/project1-1.gif" alt="Project 1 GIF-1">
+            <img src="Temp files/project1-2.gif" alt="Project 1 GIF-2">
+            <img src="Temp files/project1-3.gif" alt="Project 1 GIF-3">
           </div>
           <!--Project Technologies-->
           <div class="project-1-technologies">
-            <header class="project-1-technologies-header lang-toggle" data-key="project1Tech">
+            <h3 class="project-1-technologies-header lang-toggle" data-key="project1Tech">
               Technologies Used for this Project:
-            </header>
-            <div class="project-1-icons">
-              <div class="project-icon">
-                <i class="fa-brands fa-html5 fa-2xl"></i>
-              </div>
-              <div class="project-icon">
-                <i class="fa-brands fa-css3-alt fa-2xl"></i>
-              </div>
-              <div class="project-icon">
-                <i class="fa-brands fa-js fa-2xl"></i>
-              </div>
-              <div class="project-icon">
-                <img src="Icons/icon-json.png" class="project-icons"></i>
-              </div>
+            </h3>
+            <div class="project-1-technologies-text-container">
+              <p class="project-1-technologies-text">HTML</p>
+              <p class="project-1-technologies-text">CSS</p>
+              <p class="project-1-technologies-text">JavaScript</p>
+              <p class="project-1-technologies-text">JSON</p>
             </div>
           </div>
         </div>
         <!--Project 2 - Text, GIFs and technologies used-->
         <div class="project-2">
           <!--Project text-->
-          <header class="project-2-header text-underline lang-toggle" data-key="project2Header">
+          <h2 class="project-2-header text-underline lang-toggle" data-key="project2Header">
             Employee Management App
-          </header>
+          </h2>
           <div class="project-2-text">
             <p class="lang-toggle" data-key="project2Text1">
               This application is a display of my Full Stack Development skills and it is a 
@@ -233,19 +220,13 @@
           </div>
           <!--Project Technologies-->
           <div class="project-2-technologies">
-            <header class="project-2-technologies-header lang-toggle" data-key="project2Tech">
+            <h3 class="project-2-technologies-header lang-toggle" data-key="project2Tech">
               Technologies Used for this Project:
-            </header>
-            <div class="project-2-icons">
-              <div class="project-icon">
-                <img src="Icons/icon-csharp.png" class="project-icons"></img>
-              </div>
-              <div class="project-icon">
-                <img src="Icons/icon-winforms.png" class="project-icons"></i>
-              </div>
-              <div class="project-icon">
-                <img src="Icons/icon-sql.png" class="project-icons"></i>
-              </div>
+            </h3>
+            <div class="project-2-technologies-text-container">
+              <p class="project-2-technologies-text">C#</p>
+              <p class="project-2-technologies-text">Windows Forms</p>
+              <p class="project-2-technologies-text">SQL</p>
             </div>
           </div>
         </div>
@@ -289,7 +270,7 @@
         </div>
         <p class="footer-copyright">
           Copyright © 2023 Dawid Szymański
-        </p>
+        </p> 
       </footer>
     </main>
     <!--Links to JS and JSON files-->
