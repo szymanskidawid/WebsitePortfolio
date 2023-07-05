@@ -85,8 +85,8 @@ function projectsDisplay()
 {
   const button1 = document.getElementsByClassName("project-button-1")[0];
   const button2 = document.getElementsByClassName("project-button-2")[0];
-  const project1 = document.getElementsByClassName("project-1")[0];
-  const project2 = document.getElementsByClassName("project-2")[0];
+  const project1 = document.getElementById("project-1");
+  const project2 = document.getElementById("project-2");
 
   button1.addEventListener('click', function() 
   {
