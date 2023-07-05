@@ -43,7 +43,7 @@
   position: relative;
   max-height: 300px;
   max-width: 450px;
-  transition: transform z-index 0.5s ease;
+  transition: transform 0.5s ease;
   transform-origin: bottom left;
   z-index: 0;
 }
