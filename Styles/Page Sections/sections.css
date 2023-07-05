@@ -21,8 +21,8 @@
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 50px;
-  border-top: 5px solid rgb(238, 255, 0);
-  border-bottom: 5px solid rgb(238, 255, 0);
+  border-top: 5px solid var(--color-yellow);
+  border-bottom: 5px solid var(--color-yellow);
 }
 
 
