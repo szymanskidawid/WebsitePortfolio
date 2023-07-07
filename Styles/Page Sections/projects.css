@@ -11,6 +11,7 @@
   display: grid;
   grid-template-rows: 10% 28% 42% 15%;
   row-gap: 10px;
+  margin: 20px;
 }
 
 #project-2 {

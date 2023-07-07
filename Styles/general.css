@@ -35,6 +35,10 @@ h1, h2, h3 {
   border-color: var(--color-black);
 }
 
+.light-mode-sections {
+  background-color: var(--color-light-gray);
+}
+
 .light-mode-footer {
   border-color: var(--color-black);
 }

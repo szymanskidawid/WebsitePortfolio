@@ -14,6 +14,8 @@
 .resume-section,
 .projects-section {
   height: 710px;
+  background-color: var(--color-dark-gray);
+  border-radius: 10px;
 }
 
 .section-headers {

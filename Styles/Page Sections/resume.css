@@ -7,15 +7,12 @@
 }
 
 .resume-section-left {
-  margin-right: 20px;
-}
-
-.blurred-cv {
-  filter: blur(2px);
+  margin: 20px;
 }
 
 .resume-section-right {
   margin-left: 20px;
+  margin-top: 10px;
   font-size: 30px;
   text-align: left;
 }

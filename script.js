@@ -1,14 +1,21 @@
-//Responsible for switching between dark and light mode.
+// Responsible for switching between dark and light mode.
 function darkLightMode() {
   const body = document.body;
   const navBar = document.querySelector(".nav-bar");
   const footer = document.querySelector(".footer-section");
   const icons = document.getElementsByClassName("icon-change");
+  const sections = document.querySelectorAll("#section");
 
   body.classList.toggle("light-mode-body");
   navBar.classList.toggle("light-mode-nav-bar");
   footer.classList.toggle("light-mode-footer");
 
+  //Loop needed as there are multiple sections with the same id.
+  for (let i = 0; i < sections.length; i++)
+  {
+    sections[i].classList.toggle("light-mode-sections");
+  }
+  
   const isLightMode = body.classList.contains("light-mode-body");
 
   for (let i = 0; i < icons.length; i++) {
@@ -29,6 +36,7 @@ function pageScroll()
   const resumeButton = document.getElementsByClassName("resume-button")[0];
   const projectsButton = document.getElementsByClassName("projects-button")[0];
 
+  //Usage of function below to avoid code duplication.
   scrollToPosition(topButton, topScroll);
   scrollToPosition(aboutButton, aboutScroll);
   scrollToPosition(resumeButton, resumeScroll);
