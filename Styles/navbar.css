@@ -3,7 +3,7 @@
   background-color: var(--color-black);
   border-bottom: 3px solid var(--color-white);
   color: var(--color-white);
-  font-size: 25px;
+  font-size: 1.5vw;
   font-weight: 700;
   display: flex;
   position: fixed;
@@ -64,4 +64,84 @@
 .top-button-text {
   padding-left: 10px;
   font-size: 12px;
+}
+
+
+/* Responsive Web Design Code */
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    font-size: 2vw;
+  }
+
+  .language-buttons .inactive img {
+    height: 7px;
+  }
+  
+  .polish-language-button,
+  .english-language-button {
+    margin-left: 10px;
+    padding: 3px 5px 0px 5px;
+  }
+
+  .about-button,
+  .resume-button,
+  .projects-button,
+  .color-mode-button,
+  .top-button {
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 2px 5px 2px 5px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .nav-bar {
+    font-size: 2vw;
+  }
+
+  .language-buttons .inactive img {
+    height: 10px;
+  }
+  
+  .polish-language-button,
+  .english-language-button {
+    margin-left: 15px;
+    padding: 5px 10px 0px 10px;
+  }
+
+  .about-button,
+  .resume-button,
+  .projects-button,
+  .color-mode-button,
+  .top-button {
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 3px 10px 3px 10px;
+  }
+}
+
+/* Small Desktop Screens */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .nav-bar {
+    font-size: 1.5vw;
+  }
+}
+
+/* Medium Desktop Screens */
+@media screen and (min-width: 1281px) and (max-width: 1680px) {
+  .nav-bar {
+    font-size: 1.5vw;
+  }
+}
+
+/* Large Desktop Screens */
+@media screen and (min-width: 1681px) {
+  .nav-bar {
+    font-size: 1.5vw;
+  }
 }

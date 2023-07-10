@@ -1,19 +1,18 @@
 /* Code in this file is responsible for seperate sections visuals */
 .page-sections {
   margin-top: 78px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .welcome-section {
-  height: 870px;
-  
+  height: 90vh; 
 }
 
 .about-section,
 .resume-section,
 .projects-section {
-  height: 710px;
+  height: 75vh;
   background-color: var(--color-dark-gray);
   border-radius: 10px;
 }
@@ -22,7 +21,7 @@
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 50px;
+  font-size: 3vw;
   border-top: 5px solid var(--color-yellow);
   border-bottom: 5px solid var(--color-yellow);
 }

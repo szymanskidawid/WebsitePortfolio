@@ -9,14 +9,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  aspect-ratio: 1/1;
 }
 
 .welcome-section-text-top {
-  font-size: 70px;
+  font-size: 5vw;
 }
 
 .welcome-section-text-bottom {
-  font-size: 50px;
+  font-size: 4vw;
 }
 
 .welcome-section-contact {
@@ -36,9 +37,49 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1/1;
 }
 
 .welcome-section-image img {
-  transform: scale(1.5);
+  max-width: 100%;
+  height: auto;
 }
 
+/* Responsive Web Design Code */
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  .welcome-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .welcome-section-text {
+    aspect-ratio: 2/1;
+  }
+
+  .welcome-section-image {
+    width: 50vw;
+    
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+ 
+}
+
+/* Small Desktop Screens */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* Medium Desktop Screens */
+@media screen and (min-width: 1281px) and (max-width: 1680px) {
+
+}
+
+/* Large Desktop Screens */
+@media screen and (min-width: 1681px) {
+
+}
