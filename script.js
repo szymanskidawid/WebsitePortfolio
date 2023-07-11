@@ -23,34 +23,37 @@ function darkLightMode() {
   }
 }
 
-//Responsible for page scrolling depending on which button has been clicked.
+// Responsible for page scrolling depending on which button has been clicked.
 function pageScroll()
 {
-  const topScroll = 0;
-  const aboutScroll = 870;
-  const resumeScroll = 1730;
-  const projectsScroll = 2580;
+  //Assign button to a variable.
+  const topButton = document.querySelector(".top-button");
+  const aboutButton = document.querySelector(".about-button");
+  const resumeButton = document.querySelector(".resume-button");
+  const projectsButton = document.querySelector(".projects-button");
 
-  const topButton = document.getElementsByClassName("top-button")[0];
-  const aboutButton = document.getElementsByClassName("about-button")[0];
-  const resumeButton = document.getElementsByClassName("resume-button")[0];
-  const projectsButton = document.getElementsByClassName("projects-button")[0];
+  //Assign scroll position to a variable.
+  const topPosition = 0;
+  const aboutPosition = document.querySelector(".welcome-section");
+  const resumePosition = document.querySelector(".about-section");
+  const projectsPosition = document.querySelector(".resume-section");
 
-  //Usage of function below to avoid code duplication.
-  scrollToPosition(topButton, topScroll);
-  scrollToPosition(aboutButton, aboutScroll);
-  scrollToPosition(resumeButton, resumeScroll);
-  scrollToPosition(projectsButton, projectsScroll);
+  //Usage of a function below to avoid code duplication.
+  scrollToPosition(topButton, topPosition);
+  scrollToPosition(aboutButton, aboutPosition.offsetTop + aboutPosition.offsetHeight);
+  scrollToPosition(resumeButton, resumePosition.offsetTop + resumePosition.offsetHeight);
+  scrollToPosition(projectsButton, projectsPosition.offsetTop + projectsPosition.offsetHeight);
 }
 
-//Supporting function to pageScroll that reduces code duplication.
-function scrollToPosition(button, scroll)
+// Supporting function to pageScroll that reduces code duplication.
+function scrollToPosition(button, position) 
 {
-  button.addEventListener("click", function()
+  button.addEventListener("click", function() 
   {
-    window.scrollTo({
-      top: scroll,
-      behavior: 'smooth'
+    window.scrollTo(
+    {
+      top: position -60, // decreasing value by 60px because of NavBar
+      behavior: "smooth"
     });
   });
 }
