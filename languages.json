@@ -1,6 +1,6 @@
 {
   "english": {
-    "topBtn": "Back to Top",
+    "topBtn": "Top",
     "aboutBtn": "About",
     "resumeBtn": "Resume",
     "projectsBtn": "Projects",
@@ -10,7 +10,7 @@
     "aboutMeText2": "I have spend majority of my teenage years living abroad in <span class='text-highlights'>United Kingdom</span> where I studied software development at <span class='text-highlights'>Uxbridge College</span>.",
     "aboutMeText3": "My last 6 months were focused on speding some of my free time to study programming and build my own projects in order to achieve my <span class='text-highlights'>goal of a career in programming</span>.",
     "resumeHeader": "Resume",
-    "resumeTextLeft": "Click the image to open my CV in a new window.",
+    "resumeTextLeft": "Click to open my CV in a new window.",
     "resumeTextRight1": "Throughout my programming journey I have accumulated knowledge of using various frameworks, languages and libraries:",
     "resumeTextList1": "jQuery (basics)",
     "resumeTextList2": "Bootstrap (basics)",
@@ -30,7 +30,7 @@
     "projectBtn2":"Employee Management App"
   },
   "polish": {
-    "topBtn": "Do góry",
+    "topBtn": "Góra",
     "aboutBtn": "O mnie",
     "resumeBtn": "CV",
     "projectsBtn": "Projekty",
@@ -40,7 +40,7 @@
     "aboutMeText2": "Większość mojej młodości spędziłem za granicą w <span class='text-highlights'>Wielkiej Brytanii</span> gdzie studiowałem tworzenie systemów komputerowych w <span class='text-highlights'>Uxbridge College</span>.",
     "aboutMeText3": "Ostatnie 6 miesięcy poświęciłem na naukę programowania i tworzenie własnych projektów w wolnym czasie, aby osiągnąć swój <span class='text-highlights'>cel kariery w programowaniu</span>.",
     "resumeHeader": "CV",
-    "resumeTextLeft": "Kliknij obraz, aby otworzyć moje CV w nowym oknie.",
+    "resumeTextLeft": "Kliknij aby otworzyć moje CV w nowym oknie.",
     "resumeTextRight1": "Podczas mojej przygody z programowaniem zdobyłem wiedzę z różnych frameworków, języków i bibliotek, m.in.:",
     "resumeTextList1": "jQuery (podstawy)",
     "resumeTextList2": "Bootstrap (podstawy)",
