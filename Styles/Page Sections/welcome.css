@@ -29,7 +29,7 @@
 .linkedin-button,
 .mail-button {
   padding: 10px 15px 10px 15px;
-  margin-right: 50px;
+  margin-right: 3em;
 }
 
 .welcome-section-image {
@@ -49,24 +49,12 @@
 
 /* Mobile Devices */
 @media screen and (max-width: 600px) {
-  .welcome-section {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
 
-  .welcome-section-text {
-    aspect-ratio: 2/1;
-  }
-
-  .welcome-section-image {
-    width: 50vw;
-    
-  }
 }
 
 /* Tablets */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
- 
+
 }
 
 /* Small Desktop Screens */

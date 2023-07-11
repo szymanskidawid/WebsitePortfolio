@@ -7,28 +7,28 @@
 }
 
 .resume-section-left {
-  margin: 20px;
+  margin: 2em;
 }
 
 .resume-cv-container {
   width: 100%; 
   height: 90%; 
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 
 .resume-section-right {
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 2em;
+  margin-top: 1em;
   font-size: 2vw;
   text-align: left;
 }
 
 .resume-section-text {
-  margin-bottom: 50px;
+  margin-bottom: 2vw;
 }
 
 .resume-section-lists {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 /* Responsive Web Design Code */

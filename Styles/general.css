@@ -6,6 +6,7 @@ body {
   color: var(--color-white);
   font-family: Kanit, Arial;
   font-weight: 400;
+  font-size: 16px;
   transition: background-color 0.3s;
   display: flex;
   flex-direction: column;

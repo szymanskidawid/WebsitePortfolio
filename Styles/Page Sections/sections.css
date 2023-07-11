@@ -6,24 +6,36 @@
 }
 
 .welcome-section {
-  height: 90vh; 
+  min-height: 90vh; 
 }
 
 .about-section,
 .resume-section,
 .projects-section {
-  height: 75vh;
+  min-height: 75vh;
   background-color: var(--color-dark-gray);
   border-radius: 10px;
 }
 
 .section-headers {
   display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 3vw;
   border-top: 5px solid var(--color-yellow);
   border-bottom: 5px solid var(--color-yellow);
+}
+
+/* Responsive Web Design Code */
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
 }
 
 
