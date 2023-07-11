@@ -40,6 +40,15 @@
 /* Responsive Web Design Code */
 
 @media (max-width: 800px){
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resume-section-left {
+    height: 50vh;
+  }
+
   .resume-section-right {
     font-size: 3vw;
   }

@@ -7,13 +7,13 @@
 }
 
 .welcome-section {
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .about-section,
 .resume-section,
 .projects-section {
-  height: 75vh;
+  min-height: 75vh;
   background-color: var(--color-dark-gray);
   border-radius: 10px;
 }
@@ -31,7 +31,13 @@
 
 @media (max-width: 800px){
   .section-headers {
-    font-size: 4vw;
+    font-size: 3.5vw;
     border-width: 3px;
   }
+
+  .about-section,
+  .resume-section,
+  .projects-section {
+    min-height: 85vh;
+}
 }

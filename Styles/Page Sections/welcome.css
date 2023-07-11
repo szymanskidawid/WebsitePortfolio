@@ -47,27 +47,9 @@
 
 /* Responsive Web Design Code */
 
-/* Mobile Devices */
-@media screen and (max-width: 600px) {
-
-}
-
-/* Tablets */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-
-}
-
-/* Small Desktop Screens */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-
-}
-
-/* Medium Desktop Screens */
-@media screen and (min-width: 1281px) and (max-width: 1680px) {
-
-}
-
-/* Large Desktop Screens */
-@media screen and (min-width: 1681px) {
-
+@media (max-width: 480px) {
+  .welcome-section {
+    display: flex;
+    flex-flow: column-reverse;
+  }
 }

@@ -52,7 +52,7 @@ function scrollToPosition(button, position)
   {
     window.scrollTo(
     {
-      top: position -75, // decreasing value by 75px because of NavBar
+      top: position -70, // decreasing value by 70px because of NavBar
       behavior: "smooth"
     });
   });
