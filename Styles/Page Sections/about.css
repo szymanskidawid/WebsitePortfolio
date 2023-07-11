@@ -13,8 +13,8 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 800px){
+@media (max-width: 640px){
   .about-section-text {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }

@@ -20,8 +20,8 @@
 
 .section-headers {
   display: inline-block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   font-size: 3vw;
   border-top: 5px solid var(--color-yellow);
   border-bottom: 5px solid var(--color-yellow);
@@ -29,7 +29,7 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 800px){
+@media (max-width: 640px){
   .section-headers {
     font-size: 3.5vw;
     border-width: 3px;

@@ -1,13 +1,14 @@
 /* Projects section */
 .projects-section {
-  display: grid;
-  grid-template-columns: 80% 20%;
+  display: flex;
+  flex-direction: row;
   text-align: left;
   margin-left: 1em;
   margin-right: 1em;
 }
 
 .project {
+  flex: 4;
   display: grid;
   grid-template-rows: 10% 28% 42% 15%;
   row-gap: 1em;
@@ -90,12 +91,13 @@
 }
 
 .project-bottom-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   margin-top: 20px;
 }
 
 .project-technologies {
+  flex: 1;
   display: flex;
   flex-direction: column;
   font-size: 1vw;
@@ -118,19 +120,22 @@
 }
 
 .project-zoom-info {
+  flex: 1;
   display: flex;
   align-items: center;
   color: var(--color-yellow);
 }
 
 .project-buttons {
-  display: grid;
-  grid-template-rows: 50% 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 .project-button-1,
 .project-button-2 {
+  flex: 1;
   transition: color 0.15s;
   border: 2px solid transparent;
   border-radius: 2px;
@@ -154,4 +159,12 @@
 
 .project-button-icon {
   margin-bottom: 10px;
+}
+
+/* Responsive Web Design Code */
+
+@media (max-width: 640px) {
+  .project-gifs {
+    flex-direction: column;
+  }
 }

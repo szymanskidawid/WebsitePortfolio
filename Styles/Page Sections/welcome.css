@@ -1,7 +1,7 @@
 /* Welcome section */
 .welcome-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .welcome-section-text {
@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  aspect-ratio: 1/1;
+  flex: 1;
 }
 
 .welcome-section-text-top {
@@ -23,13 +23,13 @@
 .welcome-section-contact {
   margin-top: 50px;
   display: flex;
+  justify-content: space-between;
 }
 
 .github-button,
 .linkedin-button,
 .mail-button {
   padding: 10px 15px 10px 15px;
-  margin-right: 3em;
 }
 
 .welcome-section-image {
@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1/1;
+  flex: 1;
 }
 
 .welcome-section-image img {

@@ -1,7 +1,7 @@
 /* Resume section */
 .resume-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -10,16 +10,18 @@
   display: flex;
   flex-direction: column;
   margin: 1em;
+  flex: 1;
 }
 
 .resume-cv-container {
   width: 100%; 
   height: 90%; 
   margin-bottom: 1em;
+  flex: 1;
 }
 
 .resume-cv-link {
-  width: 100%;
+  color: var(--color-yellow);
 }
 
 .resume-section-right {
@@ -27,6 +29,7 @@
   margin-top: 1em;
   font-size: 1.5vw;
   text-align: left;
+  flex: 1;
 }
 
 .resume-section-text {
@@ -39,21 +42,24 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 800px){
+@media (max-width: 640px){
   .resume-section {
-    display: flex;
     flex-direction: column;
   }
 
   .resume-section-left {
-    height: 50vh;
+    height: 80vh;
+  }
+
+  .resume-cv-link {
+    font-size: 0.5em;
   }
 
   .resume-section-right {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   .resume-section-lists {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }
