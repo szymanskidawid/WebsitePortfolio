@@ -18,21 +18,36 @@
   display: none;
 }
 
-/* Header */
+.project-top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .project-header {
   font-size: 2vw;
 }
 
-/* Text */
+.project-repo-button {
+  display: flex;
+  align-items: center;
+  margin-right: 5em;
+  color: var(--color-yellow);
+}
+
+.project-repo-button-text {
+  margin-left: 10px;
+}
+
 .project-text{
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 .project-paragraphs {
+  display: flex;
   margin-top: 1em;
 }
 
-/* Images */
 .project-gifs{
   margin-left: 1em;
   margin-right: 1em;
@@ -74,16 +89,16 @@
   transition: opacity 0.5s ease;
 }
 
-.project-bottom {
+.project-bottom-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 20px;
 }
 
-/* Technologies Used */
 .project-technologies {
-  display: grid;
-  row-gap: 1em;
+  display: flex;
+  flex-direction: column;
+  font-size: 1vw;
 }
 
 .project-technologies-header {
@@ -108,7 +123,6 @@
   color: var(--color-yellow);
 }
 
-/* Side Buttons */
 .project-buttons {
   display: grid;
   grid-template-rows: 50% 50%;
@@ -138,29 +152,6 @@
   border-color: var(--color-purple);
 }
 
-/* Responsive Web Design Code */
-
-/* Mobile Devices */
-@media screen and (max-width: 600px) {
-
-}
-
-/* Tablets */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-
-}
-
-/* Small Desktop Screens */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-
-}
-
-/* Medium Desktop Screens */
-@media screen and (min-width: 1281px) and (max-width: 1680px) {
-
-}
-
-/* Large Desktop Screens */
-@media screen and (min-width: 1681px) {
-
+.project-button-icon {
+  margin-bottom: 10px;
 }
