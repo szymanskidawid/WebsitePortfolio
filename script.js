@@ -38,11 +38,14 @@ function pageScroll()
   const resumePosition = document.querySelector(".about-section");
   const projectsPosition = document.querySelector(".resume-section");
 
+  //Assign navBar height to a variable that can be used to determine exact scroll position.
+  const navBarHeight = document.querySelector(".nav-bar")
+
   //Usage of a function below to avoid code duplication.
   scrollToPosition(topButton, topPosition);
-  scrollToPosition(aboutButton, aboutPosition.offsetTop + aboutPosition.offsetHeight);
-  scrollToPosition(resumeButton, resumePosition.offsetTop + resumePosition.offsetHeight);
-  scrollToPosition(projectsButton, projectsPosition.offsetTop + projectsPosition.offsetHeight);
+  scrollToPosition(aboutButton, aboutPosition.offsetTop + aboutPosition.offsetHeight - navBarHeight.offsetHeight);
+  scrollToPosition(resumeButton, resumePosition.offsetTop + resumePosition.offsetHeight - navBarHeight.offsetHeight);
+  scrollToPosition(projectsButton, projectsPosition.offsetTop + projectsPosition.offsetHeight - navBarHeight.offsetHeight);
 }
 
 // Supporting function to pageScroll that reduces code duplication.
@@ -52,7 +55,7 @@ function scrollToPosition(button, position)
   {
     window.scrollTo(
     {
-      top: position -70, // decreasing value by 70px because of NavBar
+      top: position,
       behavior: "smooth"
     });
   });
