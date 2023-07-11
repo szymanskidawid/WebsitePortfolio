@@ -52,7 +52,7 @@ function scrollToPosition(button, position)
   {
     window.scrollTo(
     {
-      top: position -60, // decreasing value by 60px because of NavBar
+      top: position -75, // decreasing value by 75px because of NavBar
       behavior: "smooth"
     });
   });
@@ -89,6 +89,23 @@ function websiteLinks()
       window.open("https://linkedin.com", "_blank");
     });
   }
+}
+
+//Function will take user to linked repositories.
+function repositoryLinks()
+{
+  const repoProject1 = document.getElementById("repo-btn-1");
+  const repoProject2 = document.getElementById("repo-btn-2");
+
+  repoProject1.addEventListener("click", function ()
+  {
+    window.open("https://github.com/szymanskidawid/WebsitePortfolio", "_blank");
+  });
+
+  repoProject2.addEventListener("click", function ()
+  {
+    window.open("https://github.com/szymanskidawid/EmployeeManagement", "_blank");
+  });
 }
 
 //Responsible for hide and display of projects using buttons.

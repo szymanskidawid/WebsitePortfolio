@@ -116,7 +116,7 @@
         <div class="resume-section-left">
           <object class="resume-cv-container" data="Temp files/tempPDF.pdf" type="application/pdf"></object>
           <a href="Temp files/tempPDF.pdf" target="_blank">
-            <p class="lang-toggle" data-key="resumeTextLeft">
+            <p class="resume-cv-link lang-toggle" data-key="resumeTextLeft">
               Click the image to open my CV in a new window.
             </p>
           </a>
@@ -155,9 +155,15 @@
         <!--Project 1 - Text, GIFs and technologies used-->
         <div id="project-1" class="project">
           <!--Project text-->
-          <h2 class="project-header text-underline lang-toggle" data-key="project1Header">
-            Portfolio Website
-          </h2>
+          <div class="project-top-container">
+            <h2 class="project-header text-underline lang-toggle" data-key="project1Header">
+              Portfolio Website
+            </h2>
+            <div id="repo-btn-1" class="all-btns project-repo-button">
+              <i class="fa-brands fa-github fa-xl" onclick="repositoryLinks()"></i>
+              <p class="project-repo-button-text">Repository Link</p>
+            </div>
+          </div>
           <div class="project-text">
             <p class="lang-toggle" data-key="project1Text1">
               I have created this very website to display my Front-End Development skills 
@@ -191,7 +197,7 @@
             </div> 
           </div>
           <!--Project Technologies-->
-          <div class="project-bottom">
+          <div class="project-bottom-container">
             <div class="project-technologies">
               <h3 class="project-technologies-header lang-toggle" data-key="project1Tech">
                 Technologies Used for this Project:
@@ -212,9 +218,15 @@
         <!--Project 2 - Text, GIFs and technologies used-->
         <div id="project-2" class="project">
           <!--Project text-->
-          <h2 class="project-header text-underline lang-toggle" data-key="project2Header">
-            Employee Management App
-          </h2>
+          <div class="project-top-container">
+            <h2 class="project-header text-underline lang-toggle" data-key="project2Header">
+              Employee Management App
+            </h2>
+            <div id="repo-btn-2" class="all-btns project-repo-button">
+              <i class="fa-brands fa-github fa-xl" onclick="repositoryLinks()"></i>
+              <p class="project-repo-button-text">Repository Link</p>
+            </div>
+          </div>
           <div class="project-text">
             <p class="lang-toggle" data-key="project2Text1">
               This application is a display of my Full Stack Development skills and it is a 
@@ -248,7 +260,7 @@
             </div> 
           </div>
           <!--Project Technologies-->
-          <div class="project-bottom">
+          <div class="project-bottom-container">
             <div class="project-technologies">
               <h3 class="project-technologies-header lang-toggle" data-key="project2Tech">
                 Technologies Used for this Project:
@@ -259,24 +271,24 @@
                 <p class="project-technologies-text">SQL</p>
               </div>
             </div>
-            <div class="project-zoom-info lang-toggle" data-key="projectHoverInfo">
-              <p>Hover over GIFs for zoom.</p>
-            </div> 
+            <p class="project-zoom-info lang-toggle" data-key="projectHoverInfo">
+              Hover over GIFs for zoom.
+            </p>
           </div>
         </div>
         <!--Buttons that switch between projects-->
         <div class="project-buttons">
           <div class="all-btns project-button-1 lang-toggle" data-key="projectBtn1" onclick="projectsDisplay()">
-            <div class="project-button-1-icon">
+            <div class="project-button-icon">
               <i class="fa fa-globe fa-2xl"></i>
             </div>
-            Portfolio Website
+            <p>Portfolio Website</p>
           </div>
           <div class="all-btns project-button-2 lang-toggle" data-key="projectBtn2" onclick="projectsDisplay()">
-            <div class="project-button--icon">
+            <div class="project-button-icon">
               <i class="fa-solid fa-database fa-2xl"></i>
             </div>
-            Employee Management App
+            <p>Employee Management App</p>
           </div>          
         </div>
       </section>
