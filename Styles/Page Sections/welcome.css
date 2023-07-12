@@ -1,4 +1,5 @@
 /* Welcome section */
+
 .welcome-section {
   display: flex;
   flex-direction: row;
@@ -51,6 +52,10 @@
   .welcome-section {
     display: flex;
     flex-flow: column-reverse;
+  }
+
+  .welcome-section-text {
+    justify-content: flex-start;
   }
 
   .welcome-section-image img {

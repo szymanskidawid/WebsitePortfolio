@@ -1,4 +1,5 @@
 /* Projects section */
+
 .projects-section {
   display: flex;
   flex-direction: row;
@@ -27,6 +28,7 @@
 .project-header {
   flex: 1;
   font-size: 2vw;
+  margin-bottom: 0.5em;
 }
 
 .project-repo-button {
@@ -51,16 +53,16 @@
 }
 
 .project-gifs{
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   display: flex;
   justify-content: space-between;
 }
 
 .project-gif-container {
   position: relative;
-  max-height: 300px;
-  max-width: 450px;
+  height: 15vw;
+  width: 22.5vw;
   transition: transform 0.5s ease;
   transform-origin: bottom left;
   z-index: 0;
@@ -179,8 +181,8 @@
   }
 
   .project-gif-container {
-    max-height: 150px;
-    max-width: 225px;
+    height: 30vw;
+    width: 45vw;
     margin-bottom: 1em;
   }
 

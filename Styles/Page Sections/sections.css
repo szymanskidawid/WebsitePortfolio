@@ -1,4 +1,5 @@
-/* Code in this file is responsible for seperate sections visuals */
+/* Seperate sections general visuals */
+
 .page-sections {
   width: auto;
   margin-top: 78px;
@@ -39,5 +40,5 @@
   .resume-section,
   .projects-section {
     min-height: 90vh;
-}
+  }
 }

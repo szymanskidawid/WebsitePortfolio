@@ -1,4 +1,5 @@
-/* Code in this file is responsible for custom visual variables */
+/* Custom visual variables */
+
 :root {
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
