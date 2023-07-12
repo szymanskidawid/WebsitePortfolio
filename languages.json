@@ -19,7 +19,7 @@
     "project1Text1": "I have created this very website to display my Front-End Development skills and have my own place to add everything that involve my employment history and current programming abilities.",
     "project1Text2": "My focus was on using the basic Web Development languages HTML, CSS and JavaScript with addition to Font Awesome for icons and various animation and Google Fonts. Additionally I have focused on making all of these features work together for a Responsive Web Design which is a staple of Web Development.",
     "project1Text3": "This website contains light/dark mode switch and language change which are common practices that help appeal to wider range of users.",
-    "projectTech": "Technologies used for this Project:",
+    "project1Tech": "Technologies used for this Project:",
     "project2Header": "Employee Management App",
     "project2Text1": "This application is a display of my Full Stack Development skills and it is a basic version of employee management software that could be used in HR department.",
     "project2Text2": "It allows user to create/edit/delete data that automatically updates in a SQL Database. There is also an option to view the main Employee table inside Windows Forms that updates all records with a press of Refresh Button and allows the user to search any specific phrases inside the table.",
