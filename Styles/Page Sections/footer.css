@@ -8,30 +8,30 @@ footer {
 
 .footer-section {
   display: grid;
-  row-gap: 10px;
+  row-gap: 1em;
 }
 
 .footer-contacts {
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 2px;
-  margin-top: 15px;
-  margin-left: 100px;
+  row-gap: 0.2em;
+  margin-top: 1em;
+  margin-left: 3em;
 }
 
 .footer-contacts-mail,
 .footer-contacts-github,
 .footer-contacts-linkedin {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .footer-btns {
   width: 24px;
-  margin-right: 15px;
+  margin-right: 1em;
 }
 
 .footer-copyright {
-  margin-bottom: 40px;
+  margin-bottom: 3em;
 }
 
 /* Responsive Web Design Code */
