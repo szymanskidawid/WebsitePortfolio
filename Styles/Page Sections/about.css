@@ -3,12 +3,13 @@
   text-align: center;
   margin-left: 1em;
   margin-right: 1em;
+  display: grid;
+  align-content: space-between;
 }
 
 .about-section-text {
   font-size: 2.7vw;
   margin-bottom: 1em;
-  max-height: 100%;
 }
 
 /* Responsive Web Design Code */
