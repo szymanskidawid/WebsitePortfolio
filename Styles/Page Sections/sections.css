@@ -31,16 +31,19 @@
 /* Responsive Web Design Code */
 
 @media (max-width: 640px){
-  .section-headers {
-    font-size: 3.5vw;
-    border-width: 3px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  .welcome-section {
+    min-height: 90vh;
   }
 
   .about-section,
   .resume-section,
   .projects-section {
-    min-height: 87vh;
+    min-height: 85vh;
+  }
+  .section-headers {
+    font-size: 3.5vw;
+    border-width: 3px;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
