@@ -21,7 +21,7 @@
 }
 
 .welcome-section-contact {
-  margin-top: 50px;
+  margin-top: 2em;
   display: flex;
   justify-content: space-between;
 }
@@ -47,9 +47,14 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .welcome-section {
     display: flex;
     flex-flow: column-reverse;
+  }
+
+  .welcome-section-image img {
+    max-width: 60%;
+    height: auto;
   }
 }

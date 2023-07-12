@@ -75,13 +75,13 @@
 .project-gif-container img {
   max-width: 100%;
   border: 5px solid;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 .project-gif-label {
   position: absolute;
-  bottom: -15px;
-  right: 20px;
+  bottom: -0.5em;
+  right: 1em;
   background-color: var(--color-purple);
   color: var(--color-white);
   padding: 0px 2px 0px 2px;
