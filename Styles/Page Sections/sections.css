@@ -32,13 +32,13 @@
 
 @media (max-width: 640px){
   .welcome-section {
-    min-height: 90vh;
+    min-height: 100vh;
   }
 
   .about-section,
   .resume-section,
   .projects-section {
-    min-height: 85vh;
+    min-height: 90vh;
   }
   .section-headers {
     font-size: 3.5vw;
