@@ -4,7 +4,7 @@
   margin-left: 1em;
   margin-right: 1em;
   display: grid;
-  align-content: space-between;
+  align-content: space-around;
 }
 
 .about-section-text {

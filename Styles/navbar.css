@@ -63,7 +63,7 @@
 }
 
 .top-button-text {
-  padding-left: 10px;
+  padding-left: 0.5em;
   font-size: 1.5vw;
 }
 
@@ -74,7 +74,7 @@
   .resume-button,
   .projects-button,
   .color-mode-button,
-  .top-button {
+  .top-button-text {
     font-size: 2.5vw;
   }
 }
