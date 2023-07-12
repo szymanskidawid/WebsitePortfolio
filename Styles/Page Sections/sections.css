@@ -2,13 +2,12 @@
 
 .page-sections {
   width: auto;
-  margin-top: 78px;
   margin-left: 1em;
   margin-right: 1em;
 }
 
 .welcome-section {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .about-section,
@@ -24,6 +23,7 @@
   margin-top: 0.4em;
   margin-bottom: 0.4em;
   font-size: 3vw;
+  font-weight: 700;
   border-top: 5px solid var(--color-yellow);
   border-bottom: 5px solid var(--color-yellow);
 }
@@ -41,6 +41,6 @@
   .about-section,
   .resume-section,
   .projects-section {
-    min-height: 90vh;
+    min-height: 87vh;
   }
 }
