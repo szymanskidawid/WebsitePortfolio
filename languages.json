@@ -25,7 +25,7 @@
     "project2Text2": "It allows user to create/edit/delete data that automatically updates in a SQL Database. There is also an option to view the main Employee table inside Windows Forms that updates all records with a press of Refresh Button and allows the user to search any specific phrases inside the table.",
     "project2Text3": "Design has been focused on minimalism and readability as I believe this type of app should focus on simplicity and performance rather than graphics and animations that will slow the program and reduce efficiency of person using it.",
     "project2Tech": "Technologies used for this Project:",
-    "projectHoverInfo": "Hover over GIFs for zoom.",
+    "projectHoverInfo": "Hover over / click GIFs for zoom.",
     "projectBtn1":"Portfolio Website",
     "projectBtn2":"Employee Management App"
   },
@@ -55,7 +55,7 @@
     "project2Text2": "Umożliwia użytkownikowi tworzenie/edycję/usuwanie danych, które automatycznie aktualizują się w bazie danych SQL. Istnieje również opcja wyświetlenia głównej tabeli pracowników w Windows Forms, która aktualizuje wszystkie dane po naciśnięciu przycisku Refresh i pozwala użytkownikowi wyszukiwać określone frazy w tabeli.",
     "project2Text3": "Projekt jest minimalistyczny i czytelny, ponieważ uważam, że tego rodzaju aplikacje powinny skupiać się na prostocie i wydajności, a nie na grafice i animacjach, które spowolnią program i zmniejszą wydajność osoby korzystającej z aplikacji.",
     "project2Tech": "Technologie wykorzystane w tym Projekcie:",
-    "projectHoverInfo": "Najedź kursorem na GIFy aby powiększyć.",
+    "projectHoverInfo": "Najedź kursorem / kliknij GIFy aby powiększyć.",
     "projectBtn1":"Strona Portfolio",
     "projectBtn2":"Aplikacja do Zarządzania Pracownikami"
   }
