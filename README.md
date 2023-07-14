@@ -6,9 +6,9 @@ Project is almost finished but it still requires some small updates and potentia
 Website will be continuosly updated as I keep increasing my programming skills and create new portfolio projects.
 
 # GIFs highlighting some functionalities
-<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/ff24aed4-f89b-4b95-a0c7-6536b26e3578" alt="project1-1" width="280">
-<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/0006c3d9-f817-443e-a71b-3dc76e57b0af" alt="project1-2" width="280">
-<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/af07ba8e-6407-4547-bee4-461764af2278" alt="project1-3" width="280">
+<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/ff24aed4-f89b-4b95-a0c7-6536b26e3578" alt="project1-1" width="250">
+<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/0006c3d9-f817-443e-a71b-3dc76e57b0af" alt="project1-2" width="250">
+<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/af07ba8e-6407-4547-bee4-461764af2278" alt="project1-3" width="250">
 
 # Installation and Setup
 Clone down this repository and open it with a code editor such as MS Visual Code.
