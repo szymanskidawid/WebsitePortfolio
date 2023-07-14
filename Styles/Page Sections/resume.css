@@ -48,10 +48,6 @@
     flex-direction: column;
   }
 
-  .resume-section-left {
-    height: 80vh;
-  }
-
   .resume-cv-link {
     font-size: 0.5em;
   }
