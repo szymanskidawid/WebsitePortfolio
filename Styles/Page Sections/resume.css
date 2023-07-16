@@ -14,6 +14,10 @@
   flex: 1;
 }
 
+#resume-pl {
+  display: none;
+}
+
 .resume-cv-container {
   width: 100%; 
   height: 90%; 

@@ -28,10 +28,10 @@
     <header class="nav-bar">
       <!--Changing language between English and Polish-->
       <div class="language-buttons">
-        <div class="all-btns english-language-button" onclick="toggleLanguage('english')">
+        <div class="all-btns english-language-button" onclick="toggleLanguage('english'); resumeDisplay()">
           <img src="Flags/flag-uk.png" class="fa-beat">
         </div>
-        <div class="all-btns polish-language-button inactive" onclick="toggleLanguage('polish')">
+        <div class="all-btns polish-language-button inactive" onclick="toggleLanguage('polish'); resumeDisplay()">
           <img src="Flags/flag-pl.png" class="fa-beat">
         </div>  
       </div>
@@ -114,14 +114,22 @@
       <!--Resume section with CV Link + Skills text-->
       <section id="section" class="resume-section">
         <!--Resume CV Window-->
-        <div class="resume-section-left">
-          <object class="resume-cv-container" data="Temp files/tempPDF.pdf" type="application/pdf"></object>
-          <a href="Temp files/tempPDF.pdf" target="_blank">
-            <p class="resume-cv-link lang-toggle" data-key="resumeTextLeft">
+        <div id="resume-eng" class="resume-section-left">
+          <object class="resume-cv-container" data="CV Files/Dawid-Szymanski-CV-ENG.pdf" type="application/pdf"></object>
+          <a href="CV Files/Dawid-Szymanski-CV-ENG.pdf" target="_blank">
+            <p class="resume-cv-link">
               Click to open my CV in a new window (English version).
             </p>
           </a>
-        </div>        
+        </div>
+        <div id="resume-pl" class="resume-section-left">
+          <object class="resume-cv-container" data="CV Files/Dawid-Szymanski-CV-PL.pdf" type="application/pdf"></object>
+          <a href="CV Files/Dawid-Szymanski-CV-PL.pdf" target="_blank">
+            <p class="resume-cv-link">
+              Kliknij aby otworzyć moje CV w nowym oknie (wersja Polska).
+            </p>
+          </a>
+        </div>       
         <!--Resume text-->
         <div class="resume-section-right">
           <p class="resume-section-text lang-toggle" data-key="resumeTextRight1">
