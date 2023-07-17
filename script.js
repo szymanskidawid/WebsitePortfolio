@@ -245,3 +245,13 @@ function fadeOutAndIn (fadeOut, fadeIn)
       }, 500);
     }
 }
+
+// Used to load below functions after page refresh so that first button click triggers them properly.
+document.addEventListener('DOMContentLoaded', function() {
+  pageScroll();
+  websiteLinks();
+  repositoryLinks();
+  toggleLanguage();
+  resumeDisplay();
+  projectsDisplay();
+});
