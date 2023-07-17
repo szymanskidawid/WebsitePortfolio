@@ -52,6 +52,10 @@
     flex-direction: column;
   }
 
+  .resume-section-left {
+    max-height: 50vh;
+  }
+
   .resume-cv-link {
     font-size: 0.5em;
   }
