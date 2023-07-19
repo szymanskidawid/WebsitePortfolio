@@ -27,7 +27,7 @@
 
 .project-header {
   flex: 1;
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin-bottom: 0.5em;
   font-weight: 500;
 }
@@ -41,18 +41,19 @@
 }
 
 .project-repo-button-text {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   margin-left: 10px;
 }
 
 .project-text-section {
   font-size: 1.2vw;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  text-align: justify;
 }
 
 .project-paragraphs {
   display: flex;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .project-gifs-section {
