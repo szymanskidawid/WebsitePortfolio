@@ -1,5 +1,6 @@
 // Responsible for switching between dark and light mode.
-function darkLightMode() {
+function darkLightMode() 
+{
   //Get references to website sections.
   const body = document.body;
   const navBar = document.querySelector(".nav-bar");
@@ -65,7 +66,7 @@ function scrollToPosition(button, position)
   });
 }
 
-//Function will take user to linked websites.
+// Function will take user to linked websites.
 function websiteLinks()
 {
   //Get references to icon buttons.
@@ -100,7 +101,7 @@ function websiteLinks()
   }
 }
 
-//Function will take user to linked repositories.
+// Function will take user to linked repositories.
 function repositoryLinks()
 {
   //Get references to buttons.
@@ -231,23 +232,24 @@ function fadeOutAndIn (fadeOut, fadeIn)
 {
   //Code triggers when first passed project (fadeOut) is currently visible.
   if (fadeOut.style.opacity !== '0') 
+  {
+    //First passed project will fade out.
+    fadeOut.style.animation = 'fade-out 0.5s ease';
+    
+    //Code triggers after 0.5s delay.
+    setTimeout(function() 
     {
-      //First passed project will fade out.
-      fadeOut.style.animation = 'fade-out 0.5s ease';
-      
-      //Code triggers after 0.5s delay.
-      setTimeout(function() 
-      {
-        //First project disappears while second slowly appears.
-        fadeOut.style.display = 'none';
-        fadeIn.style.display = 'flex';
-        fadeIn.style.animation = 'fade-in 0.5s ease';
-      }, 500);
-    }
+      //First project disappears while second slowly appears.
+      fadeOut.style.display = 'none';
+      fadeIn.style.display = 'flex';
+      fadeIn.style.animation = 'fade-in 0.5s ease';
+    }, 500);
+  }
 }
 
 // Used to load below functions after page refresh so that first button click triggers them properly.
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() 
+{
   pageScroll();
   websiteLinks();
   repositoryLinks();
