@@ -20,8 +20,8 @@
 
 .section-headers {
   display: inline-block;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
   font-size: 3vw;
   font-weight: 700;
   border-top: 5px solid var(--color-yellow);
