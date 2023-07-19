@@ -1,10 +1,10 @@
 /* About section */
 .about-section {
+  display: grid;
+  align-content: space-around;
   text-align: center;
   margin-left: 1em;
   margin-right: 1em;
-  display: grid;
-  align-content: space-around;
 }
 
 .about-section-text {

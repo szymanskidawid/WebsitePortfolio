@@ -46,9 +46,9 @@
 }
 
 .project-text-section {
+  text-align: justify;
   font-size: 1.2vw;
   margin-bottom: 0.5em;
-  text-align: justify;
 }
 
 .project-paragraphs {
@@ -57,10 +57,10 @@
 }
 
 .project-gifs-section {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
   display: flex;
   justify-content: space-between;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .project-gif {
@@ -101,13 +101,13 @@
   display: flex;
   flex-direction: row;
   margin-top: 1em;
+  font-size: 1vw;
 }
 
 .project-technologies {
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-size: 1vw;
   margin-left: 1.5em;
 }
 
@@ -130,7 +130,6 @@
   display: flex;
   align-items: center;
   color: var(--color-yellow);
-  font-size: 1vw;
 }
 
 .project-buttons {
@@ -174,7 +173,10 @@
     font-size: 2.5vw;
   }
 
-  .project-text-section{
+  .project-text-section,
+  .project-technologies,
+  .project-bottom-section,
+  .project-zoom-info{
     font-size: 2vw;
   }
 
@@ -194,17 +196,11 @@
 
   .project-bottom-section {
     width: 100%;
-    font-size: 2vw;
     flex-flow: column-reverse;
   }
 
-  .project-technologies,
   .project-zoom-info {
-    font-size: 2vw;
-  }
-
-  .project-zoom-info {
-    margin-left: 1.5em;
+    margin-left: 3em;
     margin-bottom: 1em;
   }
 
