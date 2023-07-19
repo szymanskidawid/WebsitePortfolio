@@ -24,7 +24,6 @@
 
 .welcome-section-contact {
   display: flex;
-  justify-content: space-between;
   margin-top: 2em; 
 }
 
@@ -32,6 +31,7 @@
 .linkedin-button,
 .mail-button {
   padding: 10px 15px 10px 15px;
+  margin: 1em;
 }
 
 .welcome-section-image {

@@ -71,6 +71,14 @@ h1, h2, h3, h4, h5 {
   text-decoration: underline;
 }
 
+/* Responsive Web Design Code */
+
+@media (max-width: 640px) {
+  .all-btns {
+    border: 1px solid transparent;
+  }
+}
+
 /* Used for Fade In/Out function */
 @keyframes fade-out {
   from {
