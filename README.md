@@ -11,7 +11,7 @@ Website will be continuosly updated as I keep increasing my programming skills a
 <img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/af07ba8e-6407-4547-bee4-461764af2278" alt="project_GIF_3" width="250">
 
 # Installation and Setup
-Clone down this repository and open it with a code editor such as MS Visual Code.
+Clone down this repository and open it with a code editor such as MS Visual Studio Code.
 There are no external libraries used apart from Font Awesome which is included in the html file.
 
 
