@@ -43,13 +43,13 @@ function pageScroll()
   const projectsPosition = document.querySelector(".resume-section");
 
   //Get a reference of navBar height to a variable that can be used to determine exact scroll position.
-  const navBarHeight = document.querySelector(".nav-bar")
+  const navBarHeight = document.querySelector(".nav-bar").offsetHeight;
 
   //Usage of a function "scrollToPosition" to avoid code duplication.
   scrollToPosition(topButton, topPosition);
-  scrollToPosition(aboutButton, aboutPosition.offsetTop + aboutPosition.offsetHeight - navBarHeight.offsetHeight);
-  scrollToPosition(resumeButton, resumePosition.offsetTop + resumePosition.offsetHeight - navBarHeight.offsetHeight);
-  scrollToPosition(projectsButton, projectsPosition.offsetTop + projectsPosition.offsetHeight - navBarHeight.offsetHeight);
+  scrollToPosition(aboutButton, aboutPosition.offsetTop + aboutPosition.offsetHeight - navBarHeight);
+  scrollToPosition(resumeButton, resumePosition.offsetTop + resumePosition.offsetHeight - navBarHeight);
+  scrollToPosition(projectsButton, projectsPosition.offsetTop + projectsPosition.offsetHeight - navBarHeight);
 }
 
 // Supporting function to pageScroll that reduces code duplication.
