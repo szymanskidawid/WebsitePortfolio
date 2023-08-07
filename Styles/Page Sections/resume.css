@@ -47,7 +47,7 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   .resume-section {
     flex-direction: column;
   }
