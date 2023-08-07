@@ -35,20 +35,8 @@ footer {
 
 /* Responsive Web Design Code */
 
-@media screen and (max-width: 600px) {
-  footer {
+@media (max-width: 640px) {
+  .about-section-text {
     font-size: 2vw;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  footer {
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  footer {
-    font-size: 1.2vw;
   }
 }
