@@ -51,7 +51,7 @@ function darkLightMode()
 
     //Bolean that returns if Light Mode is on or off.
     const isLightMode = body.classList.contains("light-mode-body");
-    
+
     //Loop that switches icons depending on which mode is active.
     for (let i = 0; i < icons.length; i++) 
     {
@@ -310,7 +310,8 @@ function fadeOutAndIn (fadeOut, fadeIn)
   }
 }
 
-// Used to load below functions after page refresh so that first button click triggers them properly.
+// Below code executed after HTML script is fully parsed.
+// Additionally used to load functions after page open/refresh so that first button click trigger properly.
 document.addEventListener('DOMContentLoaded', function() 
 {
   darkLightMode();
