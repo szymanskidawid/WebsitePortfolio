@@ -167,7 +167,7 @@ function websiteLinks()
   {
     linkedin[i].addEventListener("click", function ()
     {
-      window.open("https://www.linkedin.com/in/dawid-szymański-15049a238", "_blank");
+      window.open("https://www.linkedin.com/in/szymanskidawid", "_blank");
     });
   }
 }
