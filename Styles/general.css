@@ -46,6 +46,17 @@ h1, h2, h3, h4, h5 {
   border-color: var(--color-black);
 }
 
+.light-mode-header-borders {
+  border-color: var(--color-green);
+}
+
+.light-mode-cv-link,
+.light-mode-repo-link,
+.light-mode-zoom-text
+{
+  color: var(--color-green);
+}
+
 .all-btns {
   border: 2px solid transparent;
   border-radius: 5px;
