@@ -1,6 +1,8 @@
 # WebsitePortfolio
 This is my personal website portfolio created for my Front-End practice and to contain my personal information, skills and projects.
 
+<a href="https://www.dawidszymanski.dev" target="_blank">www.dawidszymanski.dev</a>
+
 # Status
 Project is finished but I still perform some small improvements.
 Website will be continuosly updated as I keep increasing my programming skills and create new portfolio projects.
