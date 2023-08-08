@@ -15,9 +15,6 @@ function darkLightMode()
   //Get reference to a colour change button.
   const colourButton = document.querySelector(".color-mode-button");
 
-  //Bolean that returns if Light Mode is on or off.
-  const isLightMode = body.classList.contains("light-mode-body");
-
   //Code below will trigger upon button click.
   colourButton.addEventListener("click", function()
   {
@@ -52,6 +49,9 @@ function darkLightMode()
       zoomText[i].classList.toggle("light-mode-zoom-text");
     }
 
+    //Bolean that returns if Light Mode is on or off.
+    const isLightMode = body.classList.contains("light-mode-body");
+    
     //Loop that switches icons depending on which mode is active.
     for (let i = 0; i < icons.length; i++) 
     {
