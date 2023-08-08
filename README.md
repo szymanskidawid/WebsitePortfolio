@@ -16,7 +16,6 @@ Website will be continuosly updated as I keep increasing my programming skills a
   
    *There are no external libraries used apart from Font Awesome which is included in the html file.*
 
-
 # Reflection
 
 This website has been created as part of my personal learning towards programming. I wanted to create a website using basic web languages in order to learn more about Front-End Development.
