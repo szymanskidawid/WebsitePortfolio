@@ -28,16 +28,16 @@
     <header class="nav-bar">
       <!--Changing language between English and Polish-->
       <div class="language-buttons">
-        <div class="all-btns english-language-button" onclick="toggleLanguage('english')">
+        <div class="all-btns english-language-button">
           <img src="Profile Picture & Flags/flag-uk.png" class="fa-beat">
         </div>
-        <div class="all-btns polish-language-button inactive" onclick="toggleLanguage('polish')">
+        <div class="all-btns polish-language-button inactive">
           <img src="Profile Picture & Flags/flag-pl.png" class="fa-beat">
         </div>  
       </div>
       <!--Right side buttons-->
       <nav class="nav-bar-right">
-        <div class="all-btns top-button" onclick="pageScroll()">
+        <div class="all-btns top-button">
           <div class="top-button-icon">
             <i class="fa-solid fa-arrow-up fa-bounce"></i>
           </div>
@@ -45,17 +45,17 @@
             Top
           </div>
         </div>
-        <div class="all-btns about-button lang-toggle" data-key="aboutBtn" onclick="pageScroll()">
+        <div class="all-btns about-button lang-toggle" data-key="aboutBtn">
           About
         </div>
-        <div class="all-btns resume-button lang-toggle" data-key="resumeBtn" onclick="pageScroll()">
+        <div class="all-btns resume-button lang-toggle" data-key="resumeBtn">
           Resume
         </div>
-        <div class="all-btns projects-button lang-toggle" data-key="projectsBtn" onclick="pageScroll()">
+        <div class="all-btns projects-button lang-toggle" data-key="projectsBtn">
           Projects
         </div>
-        <!--Changing Light/Dark mode-->
-        <div class="all-btns color-mode-button" onclick="darkLightMode()">
+        <!--Changing Dark/Light mode-->
+        <div class="all-btns color-mode-button">
           <i class="icon-change fa fa-sun fa-beat"></i>
         </div>
       </nav>  
@@ -93,7 +93,7 @@
         About Me
       </h1>
       <!--About Me section-->
-      <section id="section" class="about-section">
+      <section class="section about-section ">
         <p class="about-section-text lang-toggle" data-key="aboutMeText1">
           I am a 26 year old curently living and working in <span class="text-highlights">Warsaw</span>, 
           together with my girlfriend and two dogs.  
@@ -112,7 +112,7 @@
         Resume
       </h1>
       <!--Resume section with CV Link + Skills text-->
-      <section id="section" class="resume-section">
+      <section class="section resume-section">
         <!--Resume CV Window-->
         <div id="resume-eng" class="resume-section-left">
           <object class="resume-cv-container" data="CV Files/Dawid-Szymanski-CV-ENG.pdf" type="application/pdf"></object>
@@ -167,7 +167,7 @@
         Projects
       </h1>
       <!--Project section with my work-->
-      <section id="section" class="projects-section">
+      <section class="section projects-section">
         <!--Project 1 - Text, GIFs and technologies used-->
         <div id="project-1" class="project">
           <!--Project text-->
@@ -347,8 +347,7 @@
         </p> 
       </footer>
     </main>
-    <!--Links to JS and JSON files-->
-    <script src="languages.json"></script>
+    <!--Links to JS file-->
     <script src="script.js"></script>
   </body>
 </html>
