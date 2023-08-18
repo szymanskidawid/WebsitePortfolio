@@ -31,7 +31,7 @@
 
 .resume-section-right {
   margin-left: 1em;
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 1.5vw;
   text-align: left;
   flex: 1;
@@ -61,10 +61,10 @@
   }
 
   .resume-section-right {
-    font-size: 3vw;
+    font-size: 1.2em;
   }
 
   .resume-section-lists {
-    font-size: 2.5vw;
+    font-size: 0.8em;
   }
 }
