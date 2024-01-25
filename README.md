@@ -1,3 +1,7 @@
+*This project is obsolete since 06 Dec 2023. For a new React.js version please visit repository below:*
+
+<a href="https://www.github.com/szymanskidawid/website-portfolio-react" target="_blank">website-portfolio-react</a>
+
 # WebsitePortfolio
 This is my personal website portfolio created for my Front-End practice and to contain my personal information, skills and projects.
 
@@ -12,11 +16,6 @@ Website will be continuosly updated as I keep increasing my programming skills a
 <img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/0006c3d9-f817-443e-a71b-3dc76e57b0af" alt="project_GIF_2" width="250">
 <img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/af07ba8e-6407-4547-bee4-461764af2278" alt="project_GIF_3" width="250">
 
-# Installation and Setup
-1) Clone down this repository and open it with MS Visual Studio Code editor.
-2) Install and use Live Server extension to avoid any debugging issues that may be caused by browser settings.
-  
-   *There are no external libraries used apart from Font Awesome which is included in the html file.*
 
 # Reflection
 
