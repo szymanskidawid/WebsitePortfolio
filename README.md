@@ -1,4 +1,4 @@
-*This project is obsolete since 06 Dec 2023. For a new React.js version please visit repository below:*
+*This project is obsolete since 06 Dec 2023. For a new React.js version, please visit the repository below:*
 
 <a href="https://www.github.com/szymanskidawid/website-portfolio-react" target="_blank">website-portfolio-react</a>
 
